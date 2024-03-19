@@ -31,7 +31,7 @@ const Landing = () => {
             <h1>
               Selamat Datang
               <br />
-              di Carevul!
+              di Hamster Pedia!
             </h1>
             <p className="text-white mt-3">
               Layanan kesehatan yang dapat kamu akses secara online.
@@ -47,7 +47,6 @@ const Landing = () => {
           </div>
           <div
             className="hero-image"
-            
           >
             <img src={Pict1} className="Character" alt="" />
           </div>

@@ -166,7 +166,12 @@ footer li {
   margin: 10px 0;
 }
 
-/* banner 1 */
+
+
+
+
+
+/* HEADER */
 .hero {
   background-attachment: fixed;
   background-size: cover;
@@ -174,7 +179,7 @@ footer li {
   color: #1e293b;
   width: auto;
   height: 400px;
-  background: linear-gradient(#21a3f8, #6700cc);
+  background: linear-gradient(#f82121, #6700cc);
 }
 
 .hero-container div {
@@ -223,12 +228,6 @@ footer li {
   padding: 10px 0 30px 0;
   font-weight: 700;
 }
-
-/* .row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 32px;
-} */
 
 .flex-column {
   flex-direction: column;

@@ -18,56 +18,6 @@ function BasicExample() {
   };
 
   let component = "";
-  if (isLoggedIn) {
-    component = (
-      <>
-        <div className="text-center">
-          <Dropdown>
-            <Dropdown.Toggle id="dropdown-basic">Account&nbsp;</Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <div className="text-center mx-4">
-                <img
-                  height={50}
-                  className="text-center justify-center"
-                  src={isLoggedIn.img} 
-                />
-
-                <h5 className="ms-auto text-center">{isLoggedIn.name}</h5>
-
-                <Button
-                  onClick={handleLogout}
-                  // onClick={window.localStorage.clear()}
-                  className="logindong text-white text-carevul border-carevul py-2"
-                >
-                  Logout
-                </Button>
-              </div>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-      </>
-    )
-  } else {
-      component = (
-        <>
-          <div className="text-center ">
-            <NavLink
-              to={"/login"}
-              className="logindong btn text-carevul border-carevul m-1"
-            >
-              Login
-            </NavLink>
-            <NavLink
-              to={"/regis"}
-              className="btn color-carevul-gradient text-white m-1"
-            >
-              Register
-            </NavLink>
-          </div>
-        </>
-      );
-  }
 
   return (
     <Navbar bg="light" expand="lg">
@@ -82,19 +32,19 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">
             <NavLink to={"/"} className="nav-link">
-              Home
+              Beranda
             </NavLink>
             {/* <NavLink to={"/paymentdoctor"} className="nav-link ">
               Payment Test
             </NavLink> */}
             <NavLink to={"/consult/category"} className="nav-link ">
-              Konsultasi
+              Jenis Hamster
             </NavLink>
             <NavLink to={"/articlehome"} className="nav-link ">
-              Artikel
+              Perawatan Hamster
             </NavLink>
             <NavLink to={"/bmicalculator"} className="nav-link ">
-              Kalkulator BMI
+              Panduan Pengiriman
             </NavLink>
           </Nav>
           <Nav className="ms-auto gap-1">

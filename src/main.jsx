@@ -28,7 +28,7 @@ import Register from "./pages/Register";
 import ListDoctor from "./components/ListDoctor.jsx";
 import Layout from "./components/Layout.jsx";
 
-// impoort outlet
+// import outlet
 import Landing from "./components/Landing";
 import ConsultRoom from "./components/ConsultRoom";
 import CategoryDoctor from "./components/CategoryDoctor";
