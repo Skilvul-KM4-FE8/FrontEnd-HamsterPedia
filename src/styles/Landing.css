@@ -117,27 +117,29 @@ nav {
   padding: 10px 20px;
   margin-bottom: 8px;
   border-radius: 12px;
+  background-color: #A36332;
+  color: #ffffff;
 }
 
-.btn-secondary {
-  border: 2px solid #296fde;
-  color: #296fde;
-  background: #ffffff;
-}
-
-.btn-secondary:hover {
-  border: 2px solid #7c1add;
-  color: #7c1add;
-  box-sizing: border-box;
+.btn-hover {
+  min-width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  background-color: #5e3313;
+  color: #ffffff;
 }
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(96.14deg, #3a8ef6 -10.84%, #7c1add 164.3%);
+  background-color: #A36332;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(96.14deg, #277ce3 -10.84%, #660bc0 164.3%);
+  background-color: #5e3313;
 }
 
 nav ul {
@@ -179,7 +181,7 @@ footer li {
   color: #1e293b;
   width: auto;
   height: 400px;
-  background: linear-gradient(#f82121, #6700cc);
+  background: #FEB421;
 }
 
 .hero-container div {
@@ -206,6 +208,8 @@ footer li {
 .hero-image img {
   width: 100%;
 }
+
+
 
 /* articles */
 .articles {
@@ -354,6 +358,8 @@ input[type="checkbox"] {
   cursor: pointer;
   border: none;
 }
+
+
 
 /* footer */
 .container {

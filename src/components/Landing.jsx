@@ -2,8 +2,8 @@ import Doctor from "../assets/medical-doctor.png";
 import History from "../assets/medical-history.png";
 import Online from "../assets/medical-online.png";
 import "../styles/Landing.css";
-import Pict1 from "../assets/pict1.png";
 import Pict2 from "../assets/pict2.png";
+import Hemi1 from "../assets/hemi1.png";
 import { Container, Row } from "react-bootstrap";
 import ArticleLanding from "../pages/ArticleLanding";
 import { Link } from "react-router-dom";
@@ -34,13 +34,13 @@ const Landing = () => {
               di Hamster Pedia!
             </h1>
             <p className="text-white mt-3">
-              Layanan kesehatan yang dapat kamu akses secara online.
-              <br /> Gratis! dimanapun dan kapanpun. Segera hubungi dokter
-              pilihanmu di Carevul!
+            Mau tau cara merawat hamster yang benar?
+              <br /> Apa yang boleh dan gak boleh kamu lakukan pada hamster kamu?
+            Yuk jelajahi website kami!
             </p>
             <Link
-              to={"/consult/category"}
-              className="logindong btn text-carevul border-carevul text-color-carevul bg-white mt-3"
+              to={"ArticleHome"}
+              className="buttonprimary btn mt-3"
             >
               Lebih Lanjut
             </Link>
@@ -48,7 +48,7 @@ const Landing = () => {
           <div
             className="hero-image"
           >
-            <img src={Pict1} className="Character" alt="" />
+            <img src={Hemi1} className="Character" alt="" />
           </div>
         </div>
       </section>
@@ -56,6 +56,31 @@ const Landing = () => {
       {/*  */}
 
       <section className="service">
+      <section
+          className="introduction"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div className="a-container ">
+            <div className="card-introduction d-flex align-center justify-center">
+              <img src={Pict2} className="Character2" alt="" />
+              <div className="desc">
+                <h2>Kenalan sama kita yuk!</h2>
+                <p>
+                  Dear Carefriends, terima kasih telah membersamai kami sejak
+                  tahun 2023. Kami berkomitmen untuk membantu masyarakat dalam
+                  layanan konsultasi secara online dengan tenaga kesehatan yang
+                  ahli dan profesional.
+                </p>
+                <p>
+                  Tetap berkembang bersama kami untuk mendukung fasilitas
+                  Telemedicine yang nyaman digunakan ya Carefriends!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div className="">
           <h1 className="a-text d-flex mt-5">Pelayanan kami</h1>
           <div className="container-fluid mb-4">
@@ -108,31 +133,6 @@ const Landing = () => {
             </Row>
           </div>
         </div>
-
-        <section
-          className="introduction"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          <div className="a-container ">
-            <div className="card-introduction d-flex align-center justify-center">
-              <img src={Pict2} className="Character2" alt="" />
-              <div className="desc">
-                <h2>Kenalan sama kita yuk!</h2>
-                <p>
-                  Dear Carefriends, terima kasih telah membersamai kami sejak
-                  tahun 2023. Kami berkomitmen untuk membantu masyarakat dalam
-                  layanan konsultasi secara online dengan tenaga kesehatan yang
-                  ahli dan profesional.
-                </p>
-                <p>
-                  Tetap berkembang bersama kami untuk mendukung fasilitas
-                  Telemedicine yang nyaman digunakan ya Carefriends!
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
       </section>
 
       <div>
