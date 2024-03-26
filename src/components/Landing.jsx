@@ -1,5 +1,3 @@
-import Doctor from "../assets/medical-doctor.png";
-import History from "../assets/medical-history.png";
 import "../styles/Landing.css";
 import Hemi1 from "../assets/hemi1.png";
 import Hemi2 from "../assets/hemi2.png";
@@ -25,7 +23,6 @@ const Landing = () => {
       <section className="mt-0 hero">
         <div
           className="hero-container d-flex justify-content-space-between m-3 mt-0"
-          
         >
           <div className="hero-text " data-aos="fade-up"
           data-aos-duration="2000">
@@ -40,7 +37,7 @@ const Landing = () => {
             Yuk jelajahi website kami!
             </p>
             <Link
-              to={"ArticleHome"}
+              to={""}
               className="buttonprimary btn mt-3"
             >
               Lebih Lanjut
@@ -123,9 +120,7 @@ const Landing = () => {
 
       <div>
         {/* article */}
-        <section className="articlelanding container">
-          <ArticleLanding />
-        </section>
+
       </div>
     </>
   );
