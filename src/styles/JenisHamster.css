@@ -161,7 +161,6 @@ footer li {
 }
 
 .card-hemi p {
-    margin-bottom: 10px;
     margin-right: 10px;
     font-size: 16px;
     line-height: 30px;
@@ -185,7 +184,7 @@ footer li {
     background-color: #FFF9F1;
     min-height: 300px;
     padding: 40px 70px;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-top: 50px;
   }
   

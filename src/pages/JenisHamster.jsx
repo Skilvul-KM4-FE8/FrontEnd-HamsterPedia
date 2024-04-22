@@ -35,10 +35,10 @@ const Consult = () => {
                                 <div className="col-md-8" data-aos="zoom-in" data-aos-duration="1000">
                                 <h2>Hamster Syrian</h2>
                                     <p>
-                                    Hamster merupakan salah satu hewan pengerat yang paling banyak
-                                    dipelihara. Banyak orang bilang, hewan menggemaskan satu ini butuh
-                                    perawatan yang cukup sulit agar bisa bertahan hidup lama. Apa iya?
-                                    yuk kenali hamster lebih jauh bersama kami Hamster Pedia!
+                                    Hamster Syrian, yang sering disebut sebagai hamster emas atau hamster teddy bear, merupakan jenis hamster yang sangat digemari oleh banyak penggemar hewan peliharaan.
+                                    <br/> <b>Penampilan :</b>
+                                    <br/> <b>Ukuran :</b>
+                                    <br/> <b>Sifat :</b>
                                     </p>
                                 </div>
                                 <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
