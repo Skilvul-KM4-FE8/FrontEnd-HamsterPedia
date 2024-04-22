@@ -30,18 +30,16 @@ import Layout from "./components/Layout.jsx";
 
 // import outlet
 import Landing from "./components/Landing";
-import ConsultRoom from "./components/ConsultRoom";
 import CategoryDoctor from "./components/CategoryDoctor";
 import LoginDoctor from "./pages/LoginDoctor";
 import RegisterDoctor from "./pages/RegisterDoctor";
-import RoomChat from "./components/RoomChat";
 import RoomChatProvider from "./context/roomChatContext";
 
 // import payment
 import PaymentPage from "./pages/PaymentPage";
 import PaymentProvider from "./context/paymentContext";
 import BookingPage from "./pages/BookingPage";
-import Consult from "./pages/Consult";
+import JenisHamster from "./pages/JenisHamster.jsx";
 import DetailDoctor from "./pages/DetailDoctor";
 import RoomChatForDoctorProvider from "./context/roomChatForDoctor";
 import RoomChatDoctor from "./components/RoomChatDoctor";
@@ -77,12 +75,7 @@ const router = createBrowserRouter(
         <Route path="/paymentdoctor/:id" element={<PaymentPage />} />
         <Route path="/bookingpage" element={<BookingPage />} />
 
-        <Route path="/consult" element={<Consult />}>
-          <Route path="/consult/chatroom" element={<ConsultRoom />}>
-            <Route path="/consult/chatroom/:id" element={<RoomChat />} />
-          </Route>
-          <Route path="/consult/category" element={<CategoryDoctor />} />
-          <Route path="/consult/category/:id" element={<ListDoctor />} />
+        <Route path="/jenishamster" element={<JenisHamster />}>
         </Route>
       </Route>
 

@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/LogoHamsped.svg"
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
 import tele from "../assets/icon/tele.png";

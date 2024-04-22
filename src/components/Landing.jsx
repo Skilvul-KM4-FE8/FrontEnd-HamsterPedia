@@ -4,7 +4,6 @@ import Hemi2 from "../assets/hemi2.png";
 import Hemi3 from "../assets/hemi3.png";
 import Hemi4 from "../assets/hemi4.png";
 import { Container, Row } from "react-bootstrap";
-import ArticleLanding from "../pages/ArticleLanding";
 import { Link } from "react-router-dom";
 
 // Aos

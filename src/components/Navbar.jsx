@@ -1,8 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, Navigate, useNavigate } from "react-router-dom";
-import CarevulLogo from "../assets/carevul-logo.svg";
-import Logo from "../assets/logo.svg"
+import Logo from "../assets/LogoHamsped.svg"
 import "./../styles/Navbar.css";
 import { Container, Button, Dropdown } from "react-bootstrap";
 import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
@@ -26,7 +25,7 @@ function BasicExample() {
         <Navbar.Brand href="#">
           {" "}
           <div className="logoApp" onClick={() => navigate("/")}>
-            <img src={Logo} alt="Carevul Logo" />{" "}
+            <img src={Logo} alt="Logo Hamsped" />{" "}
           </div>{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -35,13 +34,13 @@ function BasicExample() {
             <NavLink to={"/"} className="nav-link">
               Beranda
             </NavLink>
-            <NavLink to={"/"} className="nav-link ">
+            <NavLink to={"/jenishamster"} className="nav-link ">
               Jenis Hamster
             </NavLink>
-            <NavLink to={"/"} className="nav-link ">
+            <NavLink to={"/perawatanhamster"} className="nav-link ">
               Perawatan Hamster
             </NavLink>
-            <NavLink to={"/"} className="nav-link ">
+            <NavLink to={"/panduanpengiriman"} className="nav-link ">
               Panduan Pengiriman
             </NavLink>
           </Nav>
