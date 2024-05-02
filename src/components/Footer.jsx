@@ -43,7 +43,7 @@ const footer = () => {
                     Perawatan
                   </Link>
                   <Link to="/bmicalculator" className="fw-normal text-gray">
-                    Panduan Pengiriman
+                    Do's and Don'ts
                   </Link>
                 </div>
               </div>

@@ -40,8 +40,8 @@ function BasicExample() {
             <NavLink to={"/perawatanhamster"} className="nav-link ">
               Perawatan Hamster
             </NavLink>
-            <NavLink to={"/panduanpengiriman"} className="nav-link ">
-              Panduan Pengiriman
+            <NavLink to={"/dnd"} className="nav-link ">
+              Do's and Don'ts
             </NavLink>
           </Nav>
           <Nav className="ms-auto gap-1">

@@ -20,7 +20,6 @@ body {
 
 .text-center {
   text-align: center;
-  color: #7c8b9d;
 }
 
 .text-center2 {
@@ -141,8 +140,13 @@ footer li {
 }
 
 /* CONTAINER */
+.a-container {
+  margin-top: 0px;
+  margin-bottom: -30px;
+}
+
 .header-jenis {
-  margin-bottom: -75px;
+  margin-bottom: -50px;
 }
 
 .a-text {
@@ -168,14 +172,70 @@ footer li {
 }
 
 .img-hemi {
-    max-width: 150px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.hemi-detail {
+  margin-top: -27px;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #393939;
+}
+
+#warning-safe {
+  background-color: #90D26D;
+  max-width: 100%;
+  max-height: 100px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#warning-safe h5{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+#warning-damage {
+  background-color: #d12d18;
+  max-width: 100%;
+  max-height: 100px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#warning-damage h5{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.icon-check {
+  max-width: 27px;
+  padding-right: 5px;
+}
+
+#card-text {
 
 }
 
 /* CONTAINER SYRIAN */
 .card-syrian h2 {
-    font-size: 30px;
-    color: #A36332;
+    font-size: 37px;
+    color: #824f28;
     margin-bottom: 15px;
   }
   
@@ -185,10 +245,67 @@ footer li {
     min-height: 300px;
     padding: 40px 70px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   
   .card-syrian img {
     width: 250px;
   }
+
+
 /* CONTAINER CAMPBELL */
+.card-campbell h2 {
+  font-size: 37px;
+  color: #795e49;
+  margin-bottom: 15px;
+}
+
+.card-campbell {
+  width: 100%;
+  background-color: #f8f3ed;
+  min-height: 300px;
+  padding: 40px 70px;
+  border-radius: 10px;
+}
+
+.card-campbell img {
+  width: 250px;
+}
+
+/* CONTAINER WINTER */
+.card-winter h2 {
+  font-size: 37px;
+  color: #3B3B3B;
+  margin-bottom: 15px;
+}
+
+.card-winter {
+  width: 100%;
+  background-color: #f4f4f4;
+  min-height: 300px;
+  padding: 40px 70px;
+  border-radius: 10px;
+}
+
+.card-winter img {
+  width: 250px;
+}
+
+/* CONTAINER ROBO */
+.card-robo h2 {
+  font-size: 37px;
+  color: #664343;
+  margin-bottom: 15px;
+}
+
+.card-robo {
+  width: 100%;
+  background-color: #f7f2f2;
+  min-height: 300px;
+  padding: 40px 70px;
+  border-radius: 10px;
+}
+
+.card-robo img {
+  width: 250px;
+}
