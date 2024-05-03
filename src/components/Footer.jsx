@@ -36,13 +36,13 @@ const footer = () => {
               <div className="list-footer flex-column d-flex justify-content-around">
                 <div className="d-flex flex-column  gap-2">
                   <h5 className="text-carevul">Site Map</h5>
-                  <Link to="/" className="fw-normal text-gray">
+                  <Link to="/jenishamster" className="fw-normal text-gray">
                     Jenis
                   </Link>
-                  <Link to="/articlehome" className="fw-normal text-gray">
+                  <Link to="/" className="fw-normal text-gray">
                     Perawatan
                   </Link>
-                  <Link to="/bmicalculator" className="fw-normal text-gray">
+                  <Link to="/" className="fw-normal text-gray">
                     Do's and Don'ts
                   </Link>
                 </div>

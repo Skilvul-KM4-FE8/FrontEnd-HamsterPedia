@@ -17,7 +17,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Consult = () => {
+const Jenis = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -161,4 +161,4 @@ const Consult = () => {
     );
 }
 
-export default Consult;
+export default Jenis;

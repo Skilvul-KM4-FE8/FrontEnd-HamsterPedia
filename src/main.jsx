@@ -6,18 +6,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import ErrorPage from "./pages/ErrorPage.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// import article
-import ArticleHome from "./pages/ArticleHome";
-import ArticleAltruisme from "./pages/ArticleAltruisme";
-import ArticleHeatwave from "./pages/ArticleHeatwave";
-import ArticleCascara from "./pages/ArticleCascara";
-import ArticleKeluarga from "./pages/ArticleKeluarga";
-import ArticleMood from "./pages/ArticleMood";
-import ArticleSelingkuh from "./pages/ArticleSelingkuh";
-import ArticleStalk from "./pages/ArticleStalk";
-import ArticleStress from "./pages/ArticleStress";
-import ArticleVita from "./pages/ArticleVita";
-
 // import bmi
 import BmiCalculator from "./pages/BmiCalculator";
 
@@ -35,11 +23,12 @@ import LoginDoctor from "./pages/LoginDoctor";
 import RegisterDoctor from "./pages/RegisterDoctor";
 import RoomChatProvider from "./context/roomChatContext";
 
-// import payment
+// import pages Hamster
 import PaymentPage from "./pages/PaymentPage";
 import PaymentProvider from "./context/paymentContext";
 import BookingPage from "./pages/BookingPage";
 import JenisHamster from "./pages/JenisHamster.jsx";
+import PerawatanHamster from "./pages/PerawatanHamster.jsx";
 import DetailDoctor from "./pages/DetailDoctor";
 import RoomChatForDoctorProvider from "./context/roomChatForDoctor";
 import RoomChatDoctor from "./components/RoomChatDoctor";
@@ -52,19 +41,6 @@ const router = createBrowserRouter(
 
       <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
         <Route path="/" element={<Landing />} />
-        {/* Di bawah sini bisa di taroh tiap halaman yang kalian buat Contohnya :  */}
-        {/* <Route path="/home" element={<Home />} /> */}
-        <Route path="/articlehome" element={<ArticleHome />} />
-        <Route path="/articlevita" element={<ArticleVita />} />
-        <Route path="/articlecascara" element={<ArticleCascara />} />
-        <Route path="/articleheatwave" element={<ArticleHeatwave />} />
-        <Route path="/articleselingkuh" element={<ArticleSelingkuh />} />
-        <Route path="/articlemood" element={<ArticleMood />} />
-        <Route path="/articlestress" element={<ArticleStress />} />
-        <Route path="/articlekeluarga" element={<ArticleKeluarga />} />
-        <Route path="/articlestalk" element={<ArticleStalk />} />
-        <Route path="/articlealtruisme" element={<ArticleAltruisme />} />
-        <Route path="/bmicalculator" element={<BmiCalculator />} />
 
         {/* <Route path="/article" element={<About />} /> */}
         <Route path="/" element={<Landing />} />
@@ -75,8 +51,8 @@ const router = createBrowserRouter(
         <Route path="/paymentdoctor/:id" element={<PaymentPage />} />
         <Route path="/bookingpage" element={<BookingPage />} />
 
-        <Route path="/jenishamster" element={<JenisHamster />}>
-        </Route>
+        <Route path="/jenishamster" element={<JenisHamster />}/>
+        <Route path="/perawatanhamster" element={<PerawatanHamster />}/>
       </Route>
 
       <Route path="/detailDoctor" element={<DetailDoctor />}>
