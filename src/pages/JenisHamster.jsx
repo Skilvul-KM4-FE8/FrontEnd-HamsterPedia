@@ -7,7 +7,6 @@ import { Container, Row } from "react-bootstrap";
 import Syrian from "../assets/hamster/syrian.png";
 import Campbell from "../assets/hamster/campbell.png";
 import Winter from "../assets/hamster/winter.png";
-
 import Check from "../assets/icon/check.png";
 import Warning from "../assets/icon/warning.png";
 
