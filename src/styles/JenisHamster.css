@@ -10,6 +10,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h4 {
+  font-size: 22px;
+  color: #1f1f1f;
+}
+
+h2 {
+  font-size: 37px;
+}
+
 .Character {
   margin-right: 100px !important;
 }
@@ -232,6 +241,62 @@ footer li {
 
 }
 
+.card-desc-jenkel {
+  margin-left: 70px;
+}
+
+.card-desc-jenkel p {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #393939;
+}
+
+/* CONTAINER JANTAN */
+.card-jantan h2 {
+    font-size: 37px;
+    color: #1f1f1f;
+    margin-bottom: 40px;
+  }
+  
+  .card-jantan {
+    width: 100%;
+    background-color: #f6fcff;
+    min-height: 300px;
+    padding: 40px 70px;
+    border-radius: 20px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  
+  .card-jantan img {
+    width: 350px;
+    margin-top: 10px;
+    margin-right: -30px;
+  }
+
+/* CONTAINER BETINA */
+.card-betina h2 {
+  font-size: 37px;
+  color: #1f1f1f;
+  margin-bottom: 40px;
+}
+
+.card-betina {
+  width: 100%;
+  background-color: #fff6fa;
+  min-height: 300px;
+  padding: 40px 70px;
+  border-radius: 20px;
+  margin-top: -20px;
+}
+
+.card-betina img {
+  width: 350px;
+  margin-top: 10px;
+  margin-left: -30px;
+}
+
 /* CONTAINER SYRIAN */
 .card-syrian h2 {
     font-size: 37px;
@@ -249,7 +314,7 @@ footer li {
   }
   
   .card-syrian img {
-    width: 250px;
+    width: 300px;
   }
 
 
@@ -269,7 +334,7 @@ footer li {
 }
 
 .card-campbell img {
-  width: 250px;
+  width: 300px;
 }
 
 /* CONTAINER WINTER */
@@ -288,7 +353,7 @@ footer li {
 }
 
 .card-winter img {
-  width: 250px;
+  width: 300px;
 }
 
 /* CONTAINER ROBO */
@@ -307,5 +372,5 @@ footer li {
 }
 
 .card-robo img {
-  width: 250px;
+  width: 350px;
 }

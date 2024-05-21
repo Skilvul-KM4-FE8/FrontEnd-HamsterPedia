@@ -1,8 +1,8 @@
 import "../styles/Landing.css";
-import Hemi1 from "../assets/hemi1.png";
-import Hemi2 from "../assets/hemi2.png";
-import Hemi3 from "../assets/hemi3.png";
-import Hemi4 from "../assets/hemi4.png";
+import eat from "../assets/hamster/eat.png";
+import banner from "../assets/hamster/banner.png";
+import jantan from "../assets/hamster/jantan.png";
+import betina from "../assets/hamster/betina.png";
 import { Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -45,7 +45,7 @@ const Landing = () => {
           <div
             className="hero-image"
           >
-            <img src={Hemi1} className="Character" alt="" />
+            <img src={banner} className="Character" alt="" />
           </div>
         </div>
       </section>
@@ -60,7 +60,7 @@ const Landing = () => {
         >
           <div className="a-container ">
             <div className="card-introduction d-flex align-center justify-center">
-              <img src={Hemi2} className="Character2" alt="" />
+              <img src={eat} className="Character2" alt="" />
               <div className="desc">
                 <h2>Tahukah Kamu?</h2>
                 <p>
@@ -89,7 +89,7 @@ const Landing = () => {
               >
                 <div className="item-service">
                   <div className="card-service d-flex flex-column align-items-center justify-content-center">
-                    <img src={Hemi3} alt="" />
+                    <img src={jantan} alt="" />
                     <h3 className="text-center mx-2">Hamster Jantan</h3>
                     <h6 className="text-center2 mx-3">
                       Klik untuk mengetahui ciri-ciri hamster jantan
@@ -97,6 +97,7 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
+
               <div
                 className="col-md-4"
                 data-aos="zoom-in"
@@ -104,7 +105,7 @@ const Landing = () => {
               >
                 <div className="item-service">
                   <div className="card-service-betina d-flex flex-column align-items-center justify-content-center">
-                    <img src={Hemi4} alt="" />
+                    <img src={betina} alt="" />
                     <h3 className="text-center mx-2">Hamster Betina</h3>
                     <h6 className="text-center2 mx-3">
                     Klik untuk mengetahui ciri-ciri hamster betina
