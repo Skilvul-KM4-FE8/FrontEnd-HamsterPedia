@@ -1,8 +1,15 @@
 // import { width } from "@mui/system";
-import "../styles/JenisHamster.css";
+import "../styles/PerawatanHamster.css";
 import { Outlet } from "react-router";
 import { Link, NavLink } from "react-router-dom";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+
+// import illust
+import Cage1 from "../assets/perawatan/cage.jpg";
+import Hemidle from "../assets/hamster/hemidle.png";
+import Container from "../assets/perawatan/container.jpg";
+import Aquarium from "../assets/perawatan/aquarium.jpg";
+import Kayu from "../assets/perawatan/kayu.jpg";
 
 // Aos
 import React, { useEffect } from "react";
@@ -17,7 +24,174 @@ const Perawatan = () => {
     return (
         <>
             <section>
-                
+            <   div className="header-perawatan">
+                    <h1 className="a-text d-flex mt-5">Perawatan Hamster</h1>
+                        <p id="a-text-subtitle">
+                        Masih bingung cara merawat hamster yang benar? <br />
+                        Yuk cari tahu bagaimana merawat hamster kamu sesuai jenisnya!
+                        </p>
+                </div>
+
+                {/* header kandang */}
+                <div className="a-container">
+                    <div className="card-header d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row>
+                                    <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Cage1} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="header-detail">
+                                            <h3>Berikan Kandang yang Luas,<br/>
+                                            Bisa Pakai Container Aja Kok!</h3>
+                                                <div className="hemi-detail">
+                                                    <p>Menurut Royal Society for the Prevention of Cruelty to Animals, minimal ukuran kandang hamster yaitu<b> 75 x 40 x 40 cm </b>dengan tinggi sekitar <b>19cm.</b>
+                                                        <br/> Khusus Hamster jenis Syrian, ukuran dan tinggi kandang harus lebih besar ya!
+                                                        <br/> Tidak berbahan kawat atau besi karena tidak baik untuk kaki dan gigi hamster.
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
+                {/* opsi kandang */}
+                <div className="a-container">
+                    <div className="card-opsi d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row>
+                                <div className="col-md-8" data-aos="zoom-in" data-aos-duration="1000">
+                                <h2>Opsi Kandang untuk Hamster</h2>
+                                    <div className="hemi-detail">
+                                    <ul>
+                                        <li><b>Kandang Plastik </b></li>
+                                        Berbentuk container atau kotak plastik
+                                        <li><b>Aquarium </b></li>
+                                        Berbahan kaca, akrilik, atau plastik
+                                        <li><b>Kandang Kayu </b></li>
+                                        Dengan tambahan bahan akrilik dan kawat besi penutup
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                                    <div className="gambar-hemi">
+                                        <img src={Hemidle} className="img-hemi-opsi img-fluid"/>
+                                    </div>
+                                </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
+                {/* kandang plastik */}
+                <div className="a-container">
+                    <div className="card-plastik d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row>
+                                    <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Container} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="header-detail">
+                                            <h3>Kandang Plastik</h3>
+                                                <div className="hemi-detail">
+                                                    <p>Kandang ini memiliki ruang yang luas, jadi membuat hamster nyaman untuk mengeksplorasi dan membuat ruang untuk sarangnya. Contoh kandang plastik yang mudah ditemukan dipasaran yaitu Container plastik.
+                                                        <ul>
+                                                            <li><b>Kelebihan : </b>Mudah dibersihkan, mudah didapat di pasaran, harganya terjangkau</li>
+                                                            <li><b>Rekomendasi : </b>Container plastik 130 liter untuk hamster dwarf, dan ukuran 150lt untuk Syrian</li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
+                {/* kandang aquarium */}
+                <div className="a-container">
+                    <div className="card-aquarium d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row>
+                                    <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Aquarium} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="header-detail">
+                                            <h3>Kandang Aquarium</h3>
+                                                <div className="hemi-detail">
+                                                    <p>Kandang ini memiliki ruang yang luas dengan bahan kaca yang bisa dipastikan kokoh untuk jangka waktu yang panjang. Ada juga aquarium dari bahan akrilik yang lebih terjangkau dan lebih ringan.
+                                                        <ul>
+                                                            <li><b>Kelebihan : </b>Mudah ditemukan di pasaran, harganya terjangkau</li>
+                                                            <li><b>Rekomendasi : </b>Bahannya tebal jadi bobotnya berat, agak sulit dibersihkan dan diangkat</li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
+                {/* kandang kayu */}
+                <div className="a-container">
+                    <div className="card-aquarium d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row>
+                                    <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Kayu} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="header-detail">
+                                            <h3>Kandang Kayu</h3>
+                                                <div className="hemi-detail">
+                                                    <p>Kita juga dapat berkreasi untuk membuat kandang sendiri dengan bahan kayu, akrilik dan kawat. Untuk dasar, bagian belakang dan kedua sisi kandang dapat dibuat menggunakan kayu, dan bagian depan menggunakan akrilik. Bagian tutup kandang dapat dibuat dengan kawat. Fungsi akrilik disini agar hamster dapat terlihat dari bagian depan kandang.
+                                                        <ul>
+                                                            <li><b>Kelebihan : </b>Harganya menyesuaikan dengan bahan yang digunakan</li>
+                                                            <li><b>Rekomendasi : </b>Proses pembuatan memakan waktu, bahan kayu mudah digerogoti oleh hamster dan kayu cepat lapuk karena air seni hamster. Namun bisa kamu lakukan pembersihan secara rutin agar kandangnya tetap terawat</li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
+                {/* warning */}
+                <div className="a-container">
+                    <div className="card-warning d-flex align-center justify-center">
+                        <div className="card-hemi">
+                            <Row>
+                                <div className="col-lg-2">
+
+                                </div>
+                                <div className="col-md-8" data-aos="zoom-in" data-aos-duration="1000">
+                                    <h3>Jangan Berikan Hamstermu Hal-Hal Dibawah Ini</h3>
+                                </div>
+                                <div className="col-md-2" data-aos="zoom-in" data-aos-duration="1000">
+                                </div>
+                            </Row>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     );

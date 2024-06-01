@@ -40,6 +40,9 @@ function BasicExample() {
             <NavLink to={"/perawatanhamster"} className="nav-link ">
               Perawatan Hamster
             </NavLink>
+            <NavLink to={"/makananhamster"} className="nav-link ">
+              Makanan Hamster
+            </NavLink>
             <NavLink to={"/dnd"} className="nav-link ">
               Do's and Don'ts
             </NavLink>
