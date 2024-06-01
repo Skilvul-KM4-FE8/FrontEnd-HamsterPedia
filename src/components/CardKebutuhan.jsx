@@ -4,12 +4,12 @@ import { Card } from "react-bootstrap";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import "../styles/card-alas.css";
 
-function CardAlasKandang() {
+function CardKebutuhan() {
   const [cards, setCard] = useState([]);
 
   useEffect(() => {
     axios(
-      "https://665b3003003609eda4601925.mockapi.io/article?page=1&limit=3"
+      "https://665b3003003609eda4601925.mockapi.io/kebutuhan?page=1&limit=6"
     ).then((result) => setCard(result.data));
   }, []);
 
@@ -33,4 +33,4 @@ function CardAlasKandang() {
   );
 }
 
-export default CardAlasKandang;
+export default CardKebutuhan;

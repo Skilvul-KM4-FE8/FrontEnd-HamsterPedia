@@ -13,6 +13,7 @@ import Layout from "./components/Layout.jsx";
 import Landing from "./components/Landing";
 import JenisHamster from "./pages/JenisHamster.jsx";
 import PerawatanHamster from "./pages/PerawatanHamster.jsx";
+import DnD from "./pages/DnD.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/jenishamster" element={<JenisHamster />}/>
         <Route path="/perawatanhamster" element={<PerawatanHamster />}/>
+        <Route path="/dnd" element={<DnD />}/>
       </Route>
 
       <Route path="/login" element={<Login />} />

@@ -11,13 +11,14 @@ import Container from "../assets/perawatan/container.jpg";
 import Aquarium from "../assets/perawatan/aquarium.jpg";
 import Kayu from "../assets/perawatan/kayu.jpg";
 import Serbukayu from "../assets/perawatan/alas.jpg";
+import Kebutuhan from "../assets/perawatan/kebutuhan.jpg";
 
 // Aos
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Cardalas from "../components/CardAlas";
-import Cardticle from "../components/Cardticle";
+import Cardkebutuhan from "../components/CardKebutuhan";
 
 const Perawatan = () => {
     useEffect(() => {
@@ -207,6 +208,41 @@ const Perawatan = () => {
                     <section className="cards-alas container">
                     <Row>
                         <Cardalas></Cardalas>
+                    </Row>
+                    </section>
+                </div>
+
+                {/* header kebutuhan */}
+                <div className="a-container">
+                    <div className="card-header d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row>
+                                    <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Kebutuhan} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="header-detail">
+                                            <h3>Selain Kandang dan Alasnya, Apa Lagi<br/>
+                                            yang Hamster Butuhkan?</h3>
+                                                <div className="hemi-detail">
+                                                    <p>Tentunya hamster membutuhkan aksesoris dan peralatan kandang lainnya, seperti mainan, roda latihan, tempat makan dan minum, rumah dan tempat bersembunyi, tempat mandi, dan tempat buang air.
+                                                        <br/> Khusus makanan kita bahas di halaman "Makanan Hamster" ya!
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="cards-alas">
+                    <section className="cards-alas container">
+                    <Row>
+                        <Cardkebutuhan></Cardkebutuhan>
                     </Row>
                     </section>
                 </div>
