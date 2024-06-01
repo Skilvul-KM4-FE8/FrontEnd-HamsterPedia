@@ -10,11 +10,14 @@ import Hemidle from "../assets/hamster/hemidle.png";
 import Container from "../assets/perawatan/container.jpg";
 import Aquarium from "../assets/perawatan/aquarium.jpg";
 import Kayu from "../assets/perawatan/kayu.jpg";
+import Serbukayu from "../assets/perawatan/alas.jpg";
 
 // Aos
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Cardalas from "../components/CardAlas";
+import Cardticle from "../components/Cardticle";
 
 const Perawatan = () => {
     useEffect(() => {
@@ -173,6 +176,39 @@ const Perawatan = () => {
                                 </Row>
                         </div>
                     </div>
+                </div>
+
+                {/* header alas kandang */}
+                <div className="a-container">
+                    <div className="card-alas d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row>
+                                    <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div>
+                                            <h3>Alas Kandang yang Aman<br/>
+                                            Untuk Hamster tapi Hemat Budget?</h3>
+                                                <div className="alas-detail">
+                                                    <p><b>Alas serbuk kayu</b> adalah yang paling aman digunakan, karena selain harganya murah serbuk kayu juga mudah dicari di pasaran.
+                                                    Serbuk kayu yang digunakan harus bersih dan minim residu kayu agar hamster tidak mengalami infeksi pernafasan. </p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Serbukayu} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="cards-alas">
+                    <section className="cards-alas container">
+                    <Row>
+                        <Cardalas></Cardalas>
+                    </Row>
+                    </section>
                 </div>
 
                 {/* warning */}

@@ -285,6 +285,43 @@
           border-radius: 15px;
       }
 
+    /* CONTAINER HEADER ALAS KANDANG */
+    .card-alas h3 {
+      font-size: 28px;
+      color: #1D1D1D;
+      margin-bottom: 20px;
+      padding-right: 40px;
+      padding-top: 40px;
+      text-align: right;
+    }
+    
+    .card-alas {
+      width: 100%;
+      background-color: #FAFAFA;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .card-alas img {
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        float: left;
+    }
+
+    .alas-detail {
+      font-size: 16px;
+      line-height: 30px;
+      color: #393939;
+      padding-left: 70px;
+      padding-right: 30px;
+      text-align: right;
+    }
+
+    .cards-alas {
+      justify-content: center;
+    }
+
     /* CONTAINER WARNING */
     .card-warning h3 {
         font-size: 28px;

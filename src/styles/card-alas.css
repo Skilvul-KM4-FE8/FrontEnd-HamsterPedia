@@ -1,0 +1,51 @@
+#article-title {
+    color: #296fde;
+    text-align: center;
+  }
+  #article-subtitle {
+    line-height: 150%;
+    text-align: center;
+  }
+  
+  #card-row {
+    margin: 0px 30px;
+  }
+  
+  #col-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  #card-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    background-color: #f6f8fa;
+    padding: 20px;
+  }
+  
+  .card-title {
+    line-height: 130%;
+    color: #151515;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+  }
+  
+  .card-text {
+    line-height: 150%;
+    font-size: 14px;
+    color: #5f5f5f;
+    font-weight: 400;
+    text-align: left;
+  }
