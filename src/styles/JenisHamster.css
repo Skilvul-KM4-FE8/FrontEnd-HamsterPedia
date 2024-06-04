@@ -189,6 +189,8 @@ footer li {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    border-radius: 10px;
+    justify-content: center;
 }
 
 .hemi-detail {
@@ -244,6 +246,7 @@ footer li {
 
 .card-desc-jenkel {
   margin-left: 70px;
+  margin-bottom: 30px;
 }
 
 .card-desc-jenkel p {
@@ -251,6 +254,17 @@ footer li {
   font-size: 16px;
   line-height: 30px;
   color: #393939;
+}
+
+.header-jenkel {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  justify-content: center;
 }
 
 /* CONTAINER JANTAN */

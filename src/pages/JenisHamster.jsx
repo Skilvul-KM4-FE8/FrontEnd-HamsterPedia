@@ -12,7 +12,7 @@ import Jantan2 from "../assets/hamster/jantan2.png";
 import Betina2 from "../assets/hamster/betina2.png";
 import Check from "../assets/icon/check.png";
 import Warning from "../assets/icon/warning.png";
-
+import Kelamin from "../assets/perawatan/kelamin.jpg";
 
 // Aos
 import React, { useEffect } from "react";
@@ -51,11 +51,11 @@ const Jenis = () => {
                                 </ul>
                             </p>
                         </div>
-                        {/* <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                        <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div className="gambar-hemi">
-                                <img src={Syrian} className="img-hemi"/>
+                                <img src={Kelamin} className="header-jenkel img-fluid"/>
                             </div>
-                        </div> */}
+                        </div>
                     </Row>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const Jenis = () => {
                                 </div>
                                 <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                                     <div className="gambar-hemi">
-                                        <img src={Betina2} className="img-hemi-jenkel"/>
+                                        <img src={Betina2} className="img-hemi-jenkel img-fluid"/>
                                     </div>
                                 </div>
                                 </Row>
@@ -92,7 +92,7 @@ const Jenis = () => {
                                 <Row>
                                 <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                                     <div className="gambar-hemi">
-                                        <img src={Jantan2} className="img-hemi-jenkel"/>
+                                        <img src={Jantan2} className="img-hemi-jenkel img-fluid"/>
                                     </div>
                                 </div>
 
@@ -139,7 +139,7 @@ const Jenis = () => {
                                 </div>
                                 <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                                     <div className="gambar-hemi">
-                                        <img src={Syrian} className="img-hemi"/>
+                                        <img src={Syrian} className="img-hemi img-fluid"/>
                                     </div>
                                     <div className="col-md-12" data-aos="zoom-in" data-aos-duration="1000" id="warning-safe">
                                         <h5>
@@ -170,7 +170,7 @@ const Jenis = () => {
                                 </div>
                                 <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                                     <div className="gambar-hemi">
-                                        <img src={Campbell} className="img-hemi"/>
+                                        <img src={Campbell} className="img-hemi img-fluid"/>
                                     </div>
                                     <div className="col-md-12" data-aos="zoom-in" data-aos-duration="1000" id="warning-damage">
                                         <h5>
@@ -201,7 +201,7 @@ const Jenis = () => {
                                 </div>
                                 <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                                     <div className="gambar-hemi">
-                                        <img src={Winter} className="img-hemi"/>
+                                        <img src={Winter} className="img-hemi img-fluid"/>
                                     </div>
                                     <div className="col-md-12" data-aos="zoom-in" data-aos-duration="1000" id="warning-safe">
                                         <h5>
@@ -232,7 +232,7 @@ const Jenis = () => {
                                 </div>
                                 <div className="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                                     <div className="gambar-hemi">
-                                        <img src={Robo} className="img-hemi"/>
+                                        <img src={Robo} className="img-hemi img-fluid"/>
                                     </div>
                                     <div className="col-md-12" data-aos="zoom-in" data-aos-duration="1000" id="warning-safe">
                                         <h5>

@@ -41,7 +41,7 @@ const Makanan = () => {
 
                                     <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="header-detail">
-                                            <h3>Wajib Berikan Kacang-Kacangan,<br/>
+                                            <h3>Wajib Berikan Biji-Bijian,<br/>
                                             Bukan Hanya Kuaci atau Kacang!</h3>
                                                 <div className="hemi-detail">
                                                     <p>Kamu bisa memberikan makanan hamster berupa biji-bijian yang dicampur dengan sayuran kering, dan bisa juga ditambahkan protein seperti mealworm kering.
