@@ -246,24 +246,6 @@ const Perawatan = () => {
                     </Row>
                     </section>
                 </div>
-
-                {/* warning */}
-                <div className="a-container">
-                    <div className="card-warning d-flex align-center justify-center">
-                        <div className="card-hemi">
-                            <Row>
-                                <div className="col-lg-2">
-
-                                </div>
-                                <div className="col-md-8" data-aos="zoom-in" data-aos-duration="1000">
-                                    <h3>Jangan Berikan Hamstermu Hal-Hal Dibawah Ini</h3>
-                                </div>
-                                <div className="col-md-2" data-aos="zoom-in" data-aos-duration="1000">
-                                </div>
-                            </Row>
-                        </div>
-                    </div>
-                </div>
             </section>
         </>
     );
