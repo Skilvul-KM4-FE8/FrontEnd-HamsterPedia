@@ -1,11 +1,17 @@
 // import { width } from "@mui/system";
-import "../styles/PerawatanHamster.css";
+import "../styles/makanan.css";
 import { Outlet } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import { Row } from "react-bootstrap";
 
 // import illust
 import Meal from "../assets/perawatan/makanan.jpg";
+import Meal1 from "../assets/perawatan/makanan/1.png";
+import Meal2 from "../assets/perawatan/makanan/2.png";
+import Meal3 from "../assets/perawatan/makanan/3.png";
+import Meal4 from "../assets/perawatan/makanan/4.png";
+import Meal5 from "../assets/perawatan/makanan/5.png";
+import Meal6 from "../assets/perawatan/makanan/6.png";
 
 // Aos
 import React, { useEffect } from "react";
@@ -54,6 +60,87 @@ const Makanan = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* card makanan */}
+                <div className="a-container">
+                    <div className="card-makanan d-flex align-center justify-center">
+                        <div className="card-hemi">
+                                <Row className="row-makanan">
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Meal1} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="makanan-detail">
+                                            <h3 className="header-mam1">Biji-Bijian</h3>
+                                            <p>Terdiri dari campuran kacang-kacangan dan biji-bijian seperti kuaci, millet, biji labu, beras merah, kacang hijau, dan jagung.</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Meal2} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="makanan-detail">
+                                            <h3>Pellet Hamster</h3>
+                                            <p>Pelet khusus hamster yang terbuat dari biji-bijian, jerami atau bahan alami lainnya, bukan pelet ikan atau pelet burung ya.</p>
+                                        </div>
+                                    </div>
+                                </Row>
+                                <Row className="row-makanan">
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Meal3} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="makanan-detail">
+                                            <h3 className="header-mam1">Buah & Sayur</h3>
+                                            <p>Berikan dalam porsi sedikit dan jangan setiap hari. Wortel, timun, brokoli, sawi, kubis, kembang kol, apel tanpa biji, stroberi, anggur, pisang, pir, dan melon.</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Meal4} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="makanan-detail">
+                                            <h3>Serangga Kering</h3>
+                                            <p>Seperti jangkrik atau mealworm. Bisa kamu beli di petshop, jangan asal mengeringkan serangga di halaman rumah ya!</p>
+                                        </div>
+                                    </div>
+                                </Row>
+                                <Row className="row-makanan">
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Meal5} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="makanan-detail">
+                                            <h3 className="header-mam1">Jerami Kering</h3>
+                                            <p>Hamster juga menyukai Jerami kering yang biasa disebut Hay. Jerami ini bisa jadi makanan hamster yang mengandung serat.</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="gambar-hemi">
+                                            <img src={Meal6} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div className="makanan-detail">
+                                            <h3>Makanan Lain</h3>
+                                            <p>Kentang rebus, roti gandum, pasta yang sudah dimasak, telur rebus, daging ayam matang, dan kacang selain kacang almond.</p>
+                                        </div>
+                                    </div>
+                                </Row>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </>
     );

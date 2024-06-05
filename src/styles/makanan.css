@@ -186,7 +186,7 @@
     margin-left: 0px;
 }
   
-  /* CONTAINER HEADER PERAWATAN */
+  /* CONTAINER HEADER MAKANAN */
   .card-header h3 {
       font-size: 28px;
       color: #1D1D1D;
@@ -209,3 +209,27 @@
         margin: 0px;
         float: left;
     }
+
+  /* CARD MAKANAN */
+  .row-makanan {
+    margin-bottom: 50px;
+  }
+
+  .card-makanan {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .card-makanan img {
+      max-width: 100%;
+      height: auto;
+      margin: 0px;
+      float: left;
+  }
+
+  .makanan-detail p {
+    font-size: 16px;
+  }
+
