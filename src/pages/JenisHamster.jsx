@@ -36,7 +36,7 @@ const Jenis = () => {
                     </p>
                 </div>
 
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-desc-jenkel">
                     <Row>
                         <div className="col-md-8" data-aos="zoom-in" data-aos-duration="1000">
@@ -61,7 +61,7 @@ const Jenis = () => {
                 </div>
 
                 {/* hamster betina */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-betina d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -86,7 +86,7 @@ const Jenis = () => {
                 </div>
 
                 {/* hamster jantan */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-jantan d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -113,7 +113,7 @@ const Jenis = () => {
                 </div>
 
                 {/* jenis hamster */}
-                <div className="header-jenis">
+                <div className="header-jenis" data-aos="zoom-in" data-aos-duration="1000">
                 <h1 className="a-text d-flex mt-5">Jenis-Jenis Hamster</h1>
                     <p id="a-text-subtitle">
                     Masih bingung bedain jenis-jenis hamster? <br />
@@ -152,7 +152,7 @@ const Jenis = () => {
                     </div>
                 </div>
 
-                <div className="a-container ">
+                <div className="a-container " data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-campbell d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -183,7 +183,7 @@ const Jenis = () => {
                     </div>
                 </div>
 
-                <div className="a-container ">
+                <div className="a-container " data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-winter d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -214,7 +214,7 @@ const Jenis = () => {
                     </div>
                 </div>
 
-                <div className="a-container ">
+                <div className="a-container " data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-robo d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>

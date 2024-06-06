@@ -35,7 +35,7 @@ const Makanan = () => {
                 </div>
 
                 {/* header makanan */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-header d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -62,7 +62,7 @@ const Makanan = () => {
                 </div>
 
                 {/* card makanan */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-makanan d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row className="row-makanan">

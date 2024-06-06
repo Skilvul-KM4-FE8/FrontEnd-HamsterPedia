@@ -37,7 +37,7 @@ const Perawatan = () => {
                 </div>
 
                 {/* header kandang */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-header d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -65,7 +65,7 @@ const Perawatan = () => {
                 </div>
 
                 {/* opsi kandang */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-opsi d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -93,7 +93,7 @@ const Perawatan = () => {
                 </div>
 
                 {/* kandang plastik */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-plastik d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -122,7 +122,7 @@ const Perawatan = () => {
                 </div>
 
                 {/* kandang aquarium */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-aquarium d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -151,7 +151,7 @@ const Perawatan = () => {
                 </div>
 
                 {/* kandang kayu */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-aquarium d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -180,7 +180,7 @@ const Perawatan = () => {
                 </div>
 
                 {/* header alas kandang */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-alas d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -204,7 +204,7 @@ const Perawatan = () => {
                     </div>
                 </div>
 
-                <div className="cards-alas">
+                <div className="cards-alas" data-aos="zoom-in" data-aos-duration="1000">
                     <section className="cards-alas container">
                     <Row>
                         <Cardalas></Cardalas>
@@ -213,7 +213,7 @@ const Perawatan = () => {
                 </div>
 
                 {/* header kebutuhan */}
-                <div className="a-container">
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div className="card-header d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
@@ -239,7 +239,7 @@ const Perawatan = () => {
                     </div>
                 </div>
 
-                <div className="cards-alas">
+                <div className="cards-alas" data-aos="zoom-in" data-aos-duration="1000">
                     <section className="cards-alas container">
                     <Row>
                         <Cardkebutuhan></Cardkebutuhan>

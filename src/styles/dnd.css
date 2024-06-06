@@ -49,21 +49,52 @@
 .card-warning h3 {
     font-size: 28px;
     color: #ffffff;
-    margin-bottom: 40px;
+    margin-top: 20px;
     text-align: center;
-    padding : 30px;
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
     font-weight: 500;
 }
 
 .card-warning {
-    width: 100%;
-    background-color: #E45A5A;
-    min-height: 100px;
-    border-radius: 10px;
-    margin-top: -20px;
-    justify-content: center;
+  background-color: #E45A5A;
+  width: 100%;
+  min-height: 100px;
+  border-radius: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.card-warning img {
+.warning-icon {
+  justify-content: center;
+  max-height: 150px;
+  padding-top: 30px;
+}
+
+/* CARD ACTION */
+.row-action {
+  margin-bottom: 50px;
+}
+
+.card-action {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.card-action h3 {
+  font-size: 28px;
+  color: #242424;
+}
+
+.card-action img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    float: left;
+}
+
+.action-detail p {
+  font-size: 16px;
 }
