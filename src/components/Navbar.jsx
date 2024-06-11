@@ -4,19 +4,10 @@ import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import Logo from "../assets/LogoHamsped.svg"
 import "./../styles/Navbar.css";
 import { Container, Button, Dropdown } from "react-bootstrap";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+import DropdownNav from "./DropdownNav";
 
-function BasicExample() {
-
-  const isLoggedIn = JSON.parse(localStorage.getItem("idUser")); // // true or false
-
+function MainNavbar() {
   const navigate = useNavigate();
-
-  const handleLogout = () => {
-    localStorage.removeItem("idUser");
-    window.location.reload();
-  };
-
   let component = "";
 
   return (
@@ -37,12 +28,7 @@ function BasicExample() {
             <NavLink to={"/jenishamster"} className="nav-link ">
               Jenis Hamster
             </NavLink>
-            <NavLink to={"/perawatanhamster"} className="nav-link ">
-              Perawatan Hamster
-            </NavLink>
-            <NavLink to={"/makananhamster"} className="nav-link ">
-              Makanan Hamster
-            </NavLink>
+            <DropdownNav></DropdownNav>
             <NavLink to={"/dnd"} className="nav-link ">
               Do's and Don'ts
             </NavLink>
@@ -56,4 +42,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default MainNavbar;
