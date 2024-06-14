@@ -36,16 +36,13 @@ const Landing = () => {
             Yuk jelajahi website kami!
             </p>
             <Link
-              to={""}
-              className="buttonprimary btn mt-3"
-            >
+              to={"/perawatanhamster"}
+              className="buttonprimary btn mt-3">
               Lebih Lanjut
             </Link>
           </div>
-          <div
-            className="hero-image"
-          >
-            <img src={banner} className="Character" alt="" />
+          <div className="hero-image">
+            <img src={banner} className="Character img-fluid" alt="" />
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ body {
 }
 
 .Character {
-  margin-right: 100px !important;
+  margin-right: 50px !important;
 }
 
 .Character2 {
@@ -169,6 +169,9 @@ footer li {
   position: absolute;
   bottom: -10px;
   right: 0;
+  margin-right: 50px !important;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-image img {
