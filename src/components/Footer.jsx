@@ -13,7 +13,7 @@ const footer = () => {
         <div className="container ">
           <div className="row d-flex justify-content-between pt-4 pb-3">
             <div className="col-mb-5 col-md-4 mt">
-              <img src={Logo} alt="" />
+              <img src={Logo} alt="" /> <br/><br/>
               <div className="text-gray  mb-4">
                 <p>
                   <span className="text-carevul fw-bolder"> Hamster Pedia :</span>{" "}
@@ -37,13 +37,19 @@ const footer = () => {
                 <div className="d-flex flex-column  gap-2">
                   <h5 className="text-carevul">Site Map</h5>
                   <Link to="/jenishamster" className="fw-normal text-gray">
-                    Jenis
+                    Jenis Hamster
                   </Link>
-                  <Link to="/" className="fw-normal text-gray">
-                    Perawatan
+                  <Link to="/perawatanhamster" className="fw-normal text-gray">
+                    Perawatan Hamster
                   </Link>
-                  <Link to="/" className="fw-normal text-gray">
+                  <Link to="/makananhamster" className="fw-normal text-gray">
+                    Makanan Hamster
+                  </Link>
+                  <Link to="/dnd" className="fw-normal text-gray">
                     Do's and Don'ts
+                  </Link>
+                  <Link to="/faktailmiah" className="fw-normal text-gray">
+                    Fakta Ilmiah
                   </Link>
                 </div>
               </div>
@@ -52,8 +58,8 @@ const footer = () => {
               <div className="list-footer ">
                 <div className="d-flex flex-column  gap-2 ">
                   <h5 className="text-carevul">Lainnya</h5>
-                  <Link to="" className="fw-normal  text-gray">
-                    Forum Lilpawfam
+                  <Link to="/forum" className="fw-normal  text-gray">
+                    Forum
                   </Link>
                   <Link to="" className="fw-normal  text-gray">
                     Contact Us

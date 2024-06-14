@@ -32,6 +32,12 @@ function MainNavbar() {
             <NavLink to={"/dnd"} className="nav-link ">
               Do's and Don'ts
             </NavLink>
+            <NavLink to={"/faktailmiah"} className="nav-link ">
+              Fakta Ilmiah
+            </NavLink>
+            <NavLink to={"/forum"} className="nav-link ">
+              Forum
+            </NavLink>
           </Nav>
           <Nav className="ms-auto gap-1">
            {component}
