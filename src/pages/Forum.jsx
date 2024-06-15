@@ -16,12 +16,46 @@ const Forum = () => {
         AOS.refresh();
       }, []);
 
-      const [isFormVisible, setIsFormVisible] = useState(false);
-      const [formData, setFormData] = useState({
-        name: '',
-        description: '',
-        image: null,
-      });
+        const [isFormVisible, setIsFormVisible] = useState(false);
+        const [author, setAuthor] = useState('');
+        const [description, setDescription] = useState('');
+        const [file, setFile] = useState(null);
+    //     const [formData, setFormData] = useState({
+    //     name: '',
+    //     description: '',
+    //     image: null,
+    //   });
+
+        const handleFileChange = (e) => {
+            setFile(e.target.files[0]);
+        }
+
+        const handleSubmit = async (e) => {
+            e.preventDefault()
+            const formData = new FormData();
+            formData.append('author', author);
+            formData.append('description', description);
+            formData.append('file', file);
+
+            console.log(formData)
+
+            try {
+                fetch("http://localhost:3003/upload", {
+                    method: 'POST',
+                    body: formData,
+                })
+
+                if (!response.ok) {
+                    throw new Error('Upload gagal')
+                }
+
+                const data = await response.json()
+                console.log(data)
+
+            } catch (e) {
+                console.log("errpr", e)
+            }
+        }
 
     return (
         <>
@@ -35,20 +69,20 @@ const Forum = () => {
                             </div>
                             <div className="app">
                                 {isFormVisible && (
-                                <form className="post-form">
+                                <form className="post-form" onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label>Nama :</label>
-                                        <input type="text" name="name"/>
+                                        <input type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} />
                                     </div>
                                     <div className="form-group">
                                         <label>Ceritakan Sesuatu :</label>
-                                        <textarea name="description"/>
+                                        <textarea name="description" value={description} onChange={e => setDescription(e.target.value)}/>
                                     </div>
                                     <div className="form-group">
                                         <label>Tambah Gambar :</label>
-                                        <input type="file" name="image" />
+                                        <input type="file" name="image" onChange={handleFileChange} />
                                     </div>
-                                    <button type="submit">Posting</button>
+                                    <button type="submit" onClick={handleSubmit}>Posting</button>
                                 </form>
                                 )}
                             </div>
