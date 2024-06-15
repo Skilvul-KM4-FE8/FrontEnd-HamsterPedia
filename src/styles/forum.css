@@ -13,6 +13,7 @@
     color: #fff;
     margin-bottom: 20px;
     font-weight: 500;
+    max-width: 1000px;
   }
   
   .new-post:hover {
@@ -21,12 +22,11 @@
   }
   
   .post-form {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border-radius: 5px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 2px 2px 2px rgb(209, 209, 209);
+    padding: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   
   .form-group {
@@ -110,4 +110,35 @@
   font-size: 12px;
   line-height: 135%;
   color: #636363;
+}
+
+/* CONTAINER LIST POSTINGAN */
+.post-author h5 {
+  color: #2c1101;
+}
+
+.list-post {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.post-title {
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+#post-img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.post-comment {
+  margin-top: 10px;
 }

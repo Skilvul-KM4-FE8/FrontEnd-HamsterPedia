@@ -2,6 +2,8 @@
 import "../styles/forum.css";
 import { Container, Row } from "react-bootstrap";
 import { useState } from "react";
+import PostForum from "../components/PostForum";
+
 // import illust
 import Eat from "../assets/hamster/eat.png";
 
@@ -40,7 +42,7 @@ const Forum = () => {
             console.log(formData)
 
             try {
-                fetch("http://localhost:3003/upload", {
+                fetch("https://backend-hamsterpedia.vercel.app/upload", {
                     method: 'POST',
                     body: formData,
                 })
@@ -111,6 +113,7 @@ const Forum = () => {
                         </div>
                     </Row>
                 </div>
+                <PostForum></PostForum>
             </section>
         </>
     );
