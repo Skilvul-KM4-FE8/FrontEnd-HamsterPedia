@@ -1,24 +1,32 @@
+/* CONTAINER UPLOAD CONTENT */
 .app {
     font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1000px;
   }
   
   .new-post {
-    background-color: #f0f0f0;
+    background-color:#eca548;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
   }
   
   .new-post:hover {
-    background-color: #e0e0e0;
+    background-color:#dd9537;
+    color: #fff;
   }
   
   .post-form {
-    margin-top: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgb(209, 209, 209);
   }
   
   .form-group {
@@ -40,12 +48,12 @@
   }
   
   .form-group input[type="file"] {
-    width: 100%;
+    width: 50%;
   }
   
   button {
-    background-color: #007bff;
-    color: white;
+    color: #fff;
+    background-color: #a36332;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -53,54 +61,53 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #5e3313;
   }
   
-  .posts {
-    margin-top: 20px;
-  }
-  
-  .post {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  .post img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .comments {
-    margin-top: 15px;
-  }
-  
-  .comments form {
-    margin-top: 10px;
-  }
-  
-  .comments input[type="text"] {
-    width: calc(100% - 100px);
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  .comments button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .comments button:hover {
-    background-color: #0056b3;
-  }
-  
+/* CONTAINER FORUM */
+.container-forum {
+  background-color: #fff8f1;
+  border-radius: 5px;
+  padding: 30px 40px;
+  position: sticky;
+}
+
+.forum-icon {
+  height: auto;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.forum-title {
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.forum-subtitle {
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: #636363;
+}
+
+.forum-title h4 {
+  color: #220f00;
+  text-align: center;
+}
+
+.forum-desc p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 135%;
+  color: #222222;
+}
+
+.forum-desc2 p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 135%;
+  color: #636363;
+}
