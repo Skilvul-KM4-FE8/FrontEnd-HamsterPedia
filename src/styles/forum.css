@@ -1,4 +1,23 @@
 /* CONTAINER UPLOAD CONTENT */
+
+.post-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure it appears in the flow of the document */
+  z-index: 10; /* Ensure it is above other elements */
+}
+
+.absolute {
+  position: relative;
+}
+
+.new-post {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
 .app {
     font-family: Arial, sans-serif;
     max-width: 1000px;

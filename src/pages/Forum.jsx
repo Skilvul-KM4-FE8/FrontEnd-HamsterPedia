@@ -22,6 +22,7 @@ const Forum = () => {
         const [author, setAuthor] = useState('');
         const [description, setDescription] = useState('');
         const [file, setFile] = useState(null);
+        const [showForm, setShowForm] = useState(null);
     //     const [formData, setFormData] = useState({
     //     name: '',
     //     description: '',
@@ -58,6 +59,10 @@ const Forum = () => {
                 console.log("error", e)
             }
         }
+    
+    const component = () => {
+        
+    }
 
     return (
         <>
@@ -71,7 +76,7 @@ const Forum = () => {
                             </div>
                             <div className="app">
                                 {isFormVisible && (
-                                <form className="post-form" onSubmit={handleSubmit}>
+                                    <form className="post-form" onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label>Nama :</label>
                                         <input type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} />
@@ -100,7 +105,7 @@ const Forum = () => {
                                 <div className="forum-desc">
                                     <p>Kamu bisa <b>menanggapi dan berdiskusi</b> dengan sesama anggota forum pada postingan yang di upload, ya! Ceritakan tentang pengalaman, pertanyaan, atau keluh kesahmu tentang si kecil di forum ini.</p>
                                 </div>
-                                {/* <hr></hr> */}
+                                <hr></hr>
                                 {/* <div className="forum-subtitle">
                                     <b>Cara Menggunakan</b>
                                 </div>
