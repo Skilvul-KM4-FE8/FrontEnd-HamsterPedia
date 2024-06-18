@@ -142,3 +142,25 @@
 .post-comment {
   margin-top: 10px;
 }
+
+/* FORUM COMMENT */
+.comment-name {
+  max-width: 23%;
+  margin-right: 10px;
+  background-color: #fbfbfb;
+  border: #222222;
+}
+
+.comment-desc {
+  max-width: 60%;
+  margin-right: 10px;
+  background-color: #fbfbfb;
+  border: #222222;
+}
+
+.new-comment {
+  margin-top: 5px;
+  border: #fff;
+  max-width: 30%;
+  border-radius: 10px;
+}

@@ -55,7 +55,7 @@ const Forum = () => {
                 console.log(data)
 
             } catch (e) {
-                console.log("errpr", e)
+                console.log("error", e)
             }
         }
 
