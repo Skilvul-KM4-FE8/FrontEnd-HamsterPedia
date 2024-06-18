@@ -19,7 +19,8 @@ function PostForum() {
 
   useEffect(() => {
     axios(
-      "https://backend-hamsterpedia.vercel.app/allposts").then(result => setCard(result.data))
+      "https://backend-hamsterpedia.vercel.app/allposts"
+).then(result => setCard(result.data))
   }, [])
 
   // POST COMMENT
