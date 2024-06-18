@@ -26,25 +26,21 @@ function PostForum() {
   // POST COMMENT
         const [author, setAuthor] = useState('');
         const [comment, setComment] = useState('');
-        const [postId, setPostId] = useState('');
 
-        const handleSubmit = async (e) => {
-            e.preventDefault()
-            const formData = new FormData();
-            formData.append('author', author);
-            formData.append('comment', comment);
-            formData.append('postsId', postId);
-
-            console.log(formData)
-
+        const handleSubmit = async (e, postId) => {
+            e.preventDefault();
+            
             try {
-                fetch("https://backend-hamsterpedia.vercel.app/addcomment/:idPost", {
-                    method: 'POST',
-                    body : formData,
-                    author: author,
-                    comment: comment,
-                    postsId: postId    
-                })
+              const response = await fetch('https://backend-hamsterpedia.vercel.app/addcomment/${postId}', {    
+                    method: 'POST', 
+                    headers: {
+                      'Content-Type' : 'application/json'
+                    },
+                    body: JSON.stringify({
+                    author: author, 
+                    comment: comment
+                  })
+                 });
 
                 if (!response.ok) {
                     throw new Error('Upload gagal')
@@ -78,10 +74,10 @@ function PostForum() {
                             <Card.Img src={item.image} id="post-img" className="img-fluid"/>
                             <hr></hr> 
                             {/* POST COMMENT */}
-                            <form className="form-comment" onSubmit={handleSubmit}>
+                            <form className="form-comment" onSubmit={(e) => handleSubmit(e, item.id)}>
                                 <input placeholder="Nama" className="comment-name" value={author} onChange={e => setAuthor(e.target.value)}/>
                                 <input placeholder="Tambahkan Komentar" className="comment-desc" value={comment} onChange={e => setComment(e.target.value)}/>
-                                <Button className="new-comment" type="submit" onClick={handleSubmit} value={postId} onChange={e => setPostId(e.target.value)}> <img src={Send}></img> </Button>
+                                <Button className="new-comment" type="submit"> <img src={Send}></img> </Button>
                             </form>
                         </div>
                     </div>
