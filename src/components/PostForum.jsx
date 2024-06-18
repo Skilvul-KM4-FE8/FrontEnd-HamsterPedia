@@ -19,8 +19,7 @@ function PostForum() {
 
   useEffect(() => {
     axios(
-      "https://backend-hamsterpedia.vercel.app/allposts"
-    ).then(result => setCard(result.data))
+      "https://backend-hamsterpedia.vercel.app/allposts").then(result => setCard(result.data))
   }, [])
 
   // POST COMMENT
@@ -31,15 +30,15 @@ function PostForum() {
             e.preventDefault();
             
             try {
-              const response = await fetch('https://backend-hamsterpedia.vercel.app/addcomment/${postId}', {    
-                    method: 'POST', 
+              const response = await fetch(`https://backend-hamsterpedia.vercel.app/addcomment/${postId}`, {    
+                    method: "POST", 
                     headers: {
-                      'Content-Type' : 'application/json'
+                      "Content-Type" : "application/json",
                     },
                     body: JSON.stringify({
                     author: author, 
-                    comment: comment
-                  })
+                    comment: comment,
+                  }),
                  });
 
                 if (!response.ok) {
