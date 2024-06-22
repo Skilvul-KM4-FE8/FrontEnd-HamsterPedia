@@ -1,6 +1,6 @@
 // import { width } from "@mui/system";
 import "../styles/forum.css";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { useState } from "react";
 import PostForum from "../components/PostForum";
 import { Link } from "react-router-dom";
@@ -13,6 +13,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Forum = () => {
+    const [refreshPostForum, setRefreshPostForum] = useState(false); // gpt
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -23,6 +25,7 @@ const Forum = () => {
     const [category, setCategory] = useState('');  // State for category
     const [file, setFile] = useState(null);
     const [loading, isLoading] = useState(false)
+    const [newData, setNewData] = useState([])
 
     const handleFileChange = (e) => {
         setFile(e.target.files[0]);
@@ -49,6 +52,8 @@ const Forum = () => {
                 method: 'POST',
                 body: formData,
             });
+            axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=General").then(result => setNewData(result.data))
+            isLoading(false)
 
             if (!response.ok) {
                 throw new Error('Upload gagal')
@@ -56,14 +61,15 @@ const Forum = () => {
 
             const data = await response.json();
             console.log(data);
+            isLoading(false)
+           
 
         } catch (e) {
             console.log("error", e);
         }
-        await axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=General").then(result => setCard(result.data))
-        const navigate = useNavigate();
-        navigate("/forum")
-        isLoading(false)
+        // const navigate = useNavigate();
+        // setRefreshPostForum(true);
+        // navigate("/forum")
         setAuthor('')
         setComment('')
     }
@@ -102,7 +108,7 @@ const Forum = () => {
                                         <input type="file" name="image" onChange={handleFileChange} />
                                     </div>
                                     <button type="submit" onClick={handleSubmit}>
-                                        {loading ? ("Loading") : "Posting"}
+                                        {(loading) ? "Loading" : "Posting"}
                                     </button>
                                 </form>
                             </div>
@@ -129,7 +135,10 @@ const Forum = () => {
                         </div>
                     </Row>
                 </div>
-                <PostForum></PostForum>
+                
+                <PostForum refresh={newData} >
+
+                </PostForum>
             </section>
         </>
     );

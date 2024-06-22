@@ -9,10 +9,26 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
-function PostForum() {
+function PostForum({refresh}) {
   // GET POST
   const [cards, setCard] = useState([])
   const [loading, isLoading] = useState(false)
+
+  const navigate = useNavigate();
+
+  const fetchData = async () => {
+    axios(
+      "https://backend-hamsterpedia.vercel.app/post/allposts?category=General")
+      .then(result => setCard(result.data)
+    )
+  }
+
+  // gpt
+  useEffect(() => {
+    // Fetch data baru ketika prop refresh berubah menjadi true
+    setCard(refresh)
+    fetchData()
+}, [refresh]);
 
   useEffect(() => {
     AOS.init();
@@ -20,12 +36,14 @@ function PostForum() {
   }, []);
 
   useEffect(() => {
+    fetchData()
     axios(
-      "https://backend-hamsterpedia.vercel.app/post/allposts?category=General"
-).then(result => setCard(result.data))
+      "https://backend-hamsterpedia.vercel.app/post/allposts?category=General")
+      .then(result => setCard(result.data)
+    )
   }, [])
 
-  const navigate = useNavigate();
+
 
 
   // POST COMMENT
