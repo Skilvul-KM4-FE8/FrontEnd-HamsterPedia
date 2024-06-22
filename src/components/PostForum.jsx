@@ -78,10 +78,12 @@ function PostForum() {
                             <Card.Text className="post-desc">{item.description}</Card.Text>
                             <Card.Img src={item.image} id="post-img" className="img-fluid"/>
                             <hr/> 
+                            <div className="show-comment">
                             {item.comments.map(c => (
                                 <p><b>{c.author}</b> {c.comment}</p>
                               )
                             )}
+                            </div>
                             {/* POST COMMENT */}
                             <form className="form-comment" onSubmit={(e) => handleSubmit(e, item.id)}>
                                 <input placeholder="Nama" className="comment-name" value={author} onChange={e => setAuthor(e.target.value)}/>

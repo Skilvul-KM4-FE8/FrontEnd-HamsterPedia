@@ -3,6 +3,11 @@ import eat from "../assets/hamster/eat.png";
 import banner from "../assets/hamster/banner.png";
 import jantan from "../assets/hamster/jantan.png";
 import betina from "../assets/hamster/betina.png";
+import Hamsterball from "../assets/Hamsterball.gif";
+import Fitur1 from "../assets/landing/1.png";
+import Fitur2 from "../assets/landing/2.png";
+import Fitur3 from "../assets/landing/3.png";
+import Fitur4 from "../assets/landing/4.png";
 import { Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -20,24 +25,27 @@ const Landing = () => {
   return (
     <>
       <section className="mt-0 hero">
-        <div
-          className="hero-container d-flex justify-content-space-between m-3 mt-0"
-        >
-          <div className="hero-text " data-aos="fade-up"
-          data-aos-duration="2000">
+        <div className="hero-container d-flex justify-content-space-between m-3 mt-0">
+          <div
+            className="hero-text "
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <h1>
               Selamat Datang
               <br />
               di Hamster Pedia!
             </h1>
             <p className="text-white mt-3">
-            Mau tau cara merawat hamster yang benar?
-              <br /> Apa yang boleh dan gak boleh kamu lakukan pada hamster kamu?
-            Yuk jelajahi website kami!
+              Mau tau cara merawat hamster yang benar?
+              <br /> Apa yang boleh dan gak boleh kamu lakukan pada hamster
+              kamu? Yuk jelajahi website kami!
             </p>
             <Link
               to={"/perawatanhamster"}
-              className="buttonprimary btn mt-3">
+              className="buttonprimary btn mt-3"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               Lebih Lanjut
             </Link>
           </div>
@@ -47,10 +55,86 @@ const Landing = () => {
         </div>
       </section>
 
-      {/*  */}
+      {/* FITUR WEBSITE */}
+      <Row className="row-fiturweb">
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div>
+            <img src={Fitur1} className="img-fluid" alt="Responsive Image" />
+          </div>
+        </div>
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <figure>
+            <img src={Fitur2} className="img-fluid" alt="Responsive Image" />
+          </figure>
+        </div>
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div>
+            <img src={Fitur3} className="img-fluid" alt="Responsive Image" />
+          </div>
+        </div>
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <figure>
+            <img src={Fitur4} className="img-fluid" alt="Responsive Image" />
+          </figure>
+        </div>
+      </Row>
+      <Row className="row-fiturweb">
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div>
+            <img src={Fitur1} className="img-fluid" alt="Responsive Image" />
+          </div>
+        </div>
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <figure>
+            <img src={Fitur2} className="img-fluid" alt="Responsive Image" />
+          </figure>
+        </div>
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div>
+            <img src={Fitur3} className="img-fluid" alt="Responsive Image" />
+          </div>
+        </div>
+        <div
+          className="card-fitur col-lg-3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <figure>
+            <img src={Fitur4} className="img-fluid" alt="Responsive Image" />
+          </figure>
+        </div>
+      </Row>
 
       <section className="service">
-      <section
+        <section
           className="introduction"
           data-aos="fade-up"
           data-aos-duration="2000"
@@ -61,10 +145,11 @@ const Landing = () => {
               <div className="desc">
                 <h2>Tahukah Kamu?</h2>
                 <p>
-                Hamster merupakan salah satu hewan pengerat yang paling banyak
-                dipelihara. Banyak orang bilang, hewan menggemaskan satu ini butuh
-                perawatan yang cukup sulit agar bisa bertahan hidup lama. Apa iya?
-                yuk kenali hamster lebih jauh bersama kami Hamster Pedia!
+                  Hamster merupakan salah satu hewan pengerat yang paling banyak
+                  dipelihara. Banyak orang bilang, hewan menggemaskan satu ini
+                  butuh perawatan yang cukup sulit agar bisa bertahan hidup
+                  lama. Apa iya? yuk kenali hamster lebih jauh bersama kami
+                  Hamster Pedia!
                 </p>
               </div>
             </div>
@@ -74,8 +159,9 @@ const Landing = () => {
         <div className="jenis-hamster">
           <h1 className="a-text d-flex mt-5">Jenis Kelamin Hamster</h1>
           <p id="a-text-subtitle">
-          Masih bingung bedain jenis kelamin hamster? <br />
-          Kenali ciri-ciri pada hamster kamu untuk mengetahui jenis kelaminnya!
+            Masih bingung bedain jenis kelamin hamster? <br />
+            Kenali ciri-ciri pada hamster kamu untuk mengetahui jenis
+            kelaminnya!
           </p>
           <div className="container-fluid mb-4">
             <Row className="gap-5 justify-content-center">
@@ -86,10 +172,16 @@ const Landing = () => {
               >
                 <div className="item-service">
                   <div className="card-service d-flex flex-column align-items-center justify-content-center">
-                    <img src={jantan} alt="" />
+                    <img src={jantan} />
                     <h3 className="text-center mx-2">Hamster Jantan</h3>
                     <h6 className="text-center2 mx-3">
-                      Klik untuk mengetahui ciri-ciri hamster jantan
+                      <Link
+                        to={"/jenishamster"}
+                        className="btn-jantan"
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        Klik untuk mengetahui ciri-ciri hamster jantan
+                      </Link>
                     </h6>
                   </div>
                 </div>
@@ -105,7 +197,13 @@ const Landing = () => {
                     <img src={betina} alt="" />
                     <h3 className="text-center mx-2">Hamster Betina</h3>
                     <h6 className="text-center2 mx-3">
-                    Klik untuk mengetahui ciri-ciri hamster betina
+                      <Link
+                        to={"/jenishamster"}
+                        className="btn-betina"
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        Klik untuk mengetahui ciri-ciri hamster betina
+                      </Link>
                     </h6>
                   </div>
                 </div>
@@ -113,12 +211,14 @@ const Landing = () => {
             </Row>
           </div>
         </div>
+
+        {/* HAMSTERBALL */}
+        <div>
+          <img src={Hamsterball} className="hamsterball img-fluid"></img>
+        </div>
       </section>
 
-      <div>
-        {/* article */}
-
-      </div>
+      <div>{/* article */}</div>
     </>
   );
 };

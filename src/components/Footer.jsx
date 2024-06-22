@@ -36,19 +36,19 @@ const footer = () => {
               <div className="list-footer flex-column d-flex justify-content-around">
                 <div className="d-flex flex-column  gap-2">
                   <h5 className="text-carevul">Site Map</h5>
-                  <Link to="/jenishamster" className="fw-normal text-gray">
+                  <Link to="/jenishamster" className="fw-normal text-gray" onClick={() => window.scrollTo(0, 0)}>
                     Jenis Hamster
                   </Link>
-                  <Link to="/perawatanhamster" className="fw-normal text-gray">
+                  <Link to="/perawatanhamster" className="fw-normal text-gray" onClick={() => window.scrollTo(0, 0)}>
                     Perawatan Hamster
                   </Link>
-                  <Link to="/makananhamster" className="fw-normal text-gray">
+                  <Link to="/makananhamster" className="fw-normal text-gray" onClick={() => window.scrollTo(0, 0)}>
                     Makanan Hamster
                   </Link>
-                  <Link to="/dnd" className="fw-normal text-gray">
+                  <Link to="/dnd" className="fw-normal text-gray" onClick={() => window.scrollTo(0, 0)}>
                     Do's and Don'ts
                   </Link>
-                  <Link to="/faktailmiah" className="fw-normal text-gray">
+                  <Link to="/faktailmiah" className="fw-normal text-gray" onClick={() => window.scrollTo(0, 0)}>
                     Fakta Ilmiah
                   </Link>
                 </div>
@@ -58,11 +58,8 @@ const footer = () => {
               <div className="list-footer ">
                 <div className="d-flex flex-column  gap-2 ">
                   <h5 className="text-carevul">Lainnya</h5>
-                  <Link to="/forum" className="fw-normal  text-gray">
+                  <Link to="/forum" className="fw-normal  text-gray" onClick={() => window.scrollTo(0, 0)}>
                     Forum
-                  </Link>
-                  <Link to="" className="fw-normal  text-gray">
-                    Contact Us
                   </Link>
                 </div>
               </div>

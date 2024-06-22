@@ -16,6 +16,8 @@ import Treat3 from "../assets/dnd/treat/3.png";
 import Treat4 from "../assets/dnd/treat/4.png";
 import Treat5 from "../assets/dnd/treat/5.png";
 import Treat6 from "../assets/dnd/treat/6.png";
+import BannerAct from "../assets/dnd/actbanner.png";
+import BannerTreat from "../assets/dnd/treatbanner.png";
 
 // Aos
 import React, { useEffect } from "react";
@@ -35,15 +37,9 @@ const Perawatan = () => {
                     <div className="card-warning d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
-                                        <div className="col-lg-2">
-                                            <img src={Warning} className="warning-icon img-fluid"/>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <h3>Jangan Lakukan Ini <br/>Pada Hamster Kamu!</h3>
-                                        </div>
-                                        <div className="col-md-2">
-                                            <img src={Warning} className="warning-icon img-fluid"/>
-                                        </div>
+                                    <div>
+                                        <img src={BannerAct} className="banner-warning"></img>
+                                    </div>
                                 </Row>
                         </div>
                     </div>
@@ -110,15 +106,9 @@ const Perawatan = () => {
                     <div className="card-warning d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
-                                        <div className="col-lg-2">
-                                            <img src={Warning} className="warning-icon img-fluid"/>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <h3>Perhatikan Hal ini Pada Kandang Hamster!</h3>
-                                        </div>
-                                        <div className="col-md-2">
-                                            <img src={Warning} className="warning-icon img-fluid"/>
-                                        </div>
+                                    <div>
+                                        <img src={BannerTreat} className="banner-warning"></img>
+                                    </div>
                                 </Row>
                         </div>
                     </div>

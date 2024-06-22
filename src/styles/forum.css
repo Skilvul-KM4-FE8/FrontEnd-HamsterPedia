@@ -155,7 +155,7 @@
 #post-img {
   max-width: 30%;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 
@@ -164,6 +164,10 @@
 }
 
 /* FORUM COMMENT */
+.show-comment {
+  margin-top: 20px;
+}
+
 .comment-name {
   max-width: 23%;
   margin-right: 10px;

@@ -46,29 +46,8 @@
 }
 
 /* CONTAINER WARNING */
-.card-warning h3 {
-    font-size: 28px;
-    color: #ffffff;
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-weight: 500;
-}
-
-.card-warning {
-  background-color: #E45A5A;
-  width: 100%;
-  min-height: 100px;
-  border-radius: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.warning-icon {
-  justify-content: center;
-  max-height: 150px;
-  padding-top: 30px;
+.banner-warning {
+  max-width: 100%;
 }
 
 /* CARD ACTION */

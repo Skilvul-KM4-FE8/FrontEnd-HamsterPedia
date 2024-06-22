@@ -94,7 +94,7 @@ const Forum = () => {
                                 )}
                             </div>
                         </div>
-                        <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                        {/* <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div className="container-forum">
                                 <div className="forum-icon">
                                     <img src={Eat} className="header-jenkel img-fluid"/>
@@ -106,16 +106,16 @@ const Forum = () => {
                                     <p>Kamu bisa <b>menanggapi dan berdiskusi</b> dengan sesama anggota forum pada postingan yang di upload, ya! Ceritakan tentang pengalaman, pertanyaan, atau keluh kesahmu tentang si kecil di forum ini.</p>
                                 </div>
                                 <hr></hr>
-                                {/* <div className="forum-subtitle">
+                                <div className="forum-subtitle">
                                     <b>Cara Menggunakan</b>
                                 </div>
                                 <div className="forum-desc2">
                                     <p>Tambah Postingan : klik tombol "Tambah Postingan Baru"<br/>
                                     Tambahkan Gambar : pilih file pada form tambah postingan, pastikan format file berbentuk (jpg, jpeg, png)<br/>
                                     Komentari Postingan : klik tambah komentar dibawah postingan lain</p>
-                                </div> */}
+                                </div>
                             </div>
-                        </div>
+                        </div> */}
                     </Row>
                 </div>
                 <PostForum></PostForum>

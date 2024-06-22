@@ -1,3 +1,7 @@
+.a-container {
+    margin-top: 0px;
+}
+
 .parallax {
     background-image: url("../assets/ilmiah/header.jpg");
     min-height: 350px;
@@ -25,3 +29,56 @@
     padding-left: 35px;
     padding-right: 35px;
 }
+
+/* CONTAINER PEMBAHASAN */
+
+.card-alas h4 {
+    font-size: 24px;
+    color: #1D1D1D;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    margin-left: 70px;
+    padding-top: 30px;
+    text-align: left;
+    line-height: 130%;
+  }
+  
+  .card-alas {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  .card-alas img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+      float: left;
+      display: block;
+      margin-right: auto;
+      margin-bottom: 30px;
+  }
+
+  .alas-detail {
+    font-size: 16px;
+    line-height: 30px;
+    color: #393939;
+    padding-left: 70px;
+    padding-right: 30px;
+    text-align: justify;
+    text-indent: 50px;
+  }
+
+  .cards-alas {
+    justify-content: center;
+  }
+
+  .paragraf {
+    font-size: 16px;
+    line-height: 30px;
+    color: #393939;
+    padding-left: 70px;
+    padding-right: 30px;
+    text-align: justify;
+    text-indent: 50px;
+  }
