@@ -2,17 +2,15 @@
 import "../styles/forum.css";
 import { Container, Row } from "react-bootstrap";
 import { useState } from "react";
-import PostForum from "../components/PostForum";
+import PostForumMakanan from "../components/PostForumMakanan";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 // Aos
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Forum = () => {
+const ForumMakanan = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -22,7 +20,6 @@ const Forum = () => {
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');  // State for category
     const [file, setFile] = useState(null);
-    const [loading, isLoading] = useState(false)
 
     const handleFileChange = (e) => {
         setFile(e.target.files[0]);
@@ -30,7 +27,6 @@ const Forum = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        isLoading(true)
         const formData = new FormData();
         formData.append('author', author);
         formData.append('description', description);
@@ -60,12 +56,6 @@ const Forum = () => {
         } catch (e) {
             console.log("error", e);
         }
-        await axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=General").then(result => setCard(result.data))
-        const navigate = useNavigate();
-        navigate("/forum")
-        isLoading(false)
-        setAuthor('')
-        setComment('')
     }
 
     return (
@@ -88,9 +78,7 @@ const Forum = () => {
                                         <label>Kategori :</label>
                                         <select name="category" value={category} onChange={e => setCategory(e.target.value)}>
                                             <option value="">Pilih Kategori</option>
-                                            <option value="General">Forum Umum</option>
                                             <option value="makanan">Forum Makanan</option>
-                                            <option value="perawatan">Forum Perawatan</option>
                                         </select>
                                     </div>
                                     <div className="form-group">
@@ -101,9 +89,7 @@ const Forum = () => {
                                         <label>Tambah Gambar :</label>
                                         <input type="file" name="image" onChange={handleFileChange} />
                                     </div>
-                                    <button type="submit" onClick={handleSubmit}>
-                                        {loading ? ("Loading") : "Posting"}
-                                    </button>
+                                    <button type="submit" onClick={handleSubmit}>Posting</button>
                                 </form>
                             </div>
                         </div>
@@ -120,7 +106,7 @@ const Forum = () => {
                                     <p>Disini kamu bisa membahas topik umum seputar makanan hamster</p>
                                 </div>
                             </Link>
-                            <Link to={"/forum-perawatan"} onClick={() => window.scrollTo(0, 0)}>
+                            <Link to={"/forum-makanan"} onClick={() => window.scrollTo(0, 0)}>
                                 <div className="container-forum-perawatan">
                                     <h4>Forum Perawatan</h4>
                                     <p>Disini kamu bisa membahas topik umum seputar perawatan hamster</p>
@@ -129,10 +115,10 @@ const Forum = () => {
                         </div>
                     </Row>
                 </div>
-                <PostForum></PostForum>
+                <PostForumMakanan></PostForumMakanan>
             </section>
         </>
     );
 }
 
-export default Forum;
+export default ForumMakanan;

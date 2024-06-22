@@ -9,7 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
-function PostForum() {
+function PostForumMakanan() {
   // GET POST
   const [cards, setCard] = useState([])
   const [loading, isLoading] = useState(false)
@@ -21,7 +21,7 @@ function PostForum() {
 
   useEffect(() => {
     axios(
-      "https://backend-hamsterpedia.vercel.app/post/allposts?category=General"
+      "https://backend-hamsterpedia.vercel.app/post/allposts?category=makanan"
 ).then(result => setCard(result.data))
   }, [])
 
@@ -55,12 +55,12 @@ function PostForum() {
                 const data = await response.json()
                 console.log(data)
 
-                await axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=General").then(result => setCard(result.data))
+                await axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=makanan").then(result => setCard(result.data))
 
             } catch (e) {
                 console.log("error", e)
             } 
-            navigate("/forum")
+            navigate("/forum-makanan")
             isLoading(false)
             setAuthor('')
             setComment('')
@@ -101,4 +101,4 @@ function PostForum() {
   )
 }
 
-export default PostForum;
+export default PostForumMakanan;

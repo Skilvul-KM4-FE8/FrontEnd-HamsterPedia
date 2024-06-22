@@ -15,6 +15,7 @@ import MakananHamster from "./pages/MakananHamster.jsx";
 import DnD from "./pages/DnD.jsx";
 import FaktaIlmiah from "./pages/FaktaIlmiah.jsx";
 import Forum from "./pages/Forum.jsx";
+import ForumMakanan from "./pages/ForumMakanan.jsx";
 
 
 const router = createBrowserRouter(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
         <Route path="/dnd" element={<DnD />}/>
         <Route path="/faktailmiah" element={<FaktaIlmiah />}/>
         <Route path="/forum" element={<Forum />}/>
+        <Route path="/forum-makanan" element={<ForumMakanan />}/>
         {/* <Route path="/forum" element={<Forum />}/> */}
       </Route>
     </>

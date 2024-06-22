@@ -84,11 +84,28 @@
   }
   
 /* CONTAINER FORUM */
-.container-forum {
+.container-forum-umum {
   background-color: #fff8f1;
   border-radius: 5px;
   padding: 30px 40px;
   position: sticky;
+  margin-bottom: 30px;
+}
+
+.container-forum-makanan {
+  background-color: #fff8f1;
+  border-radius: 5px;
+  padding: 30px 40px;
+  position: sticky;
+  margin-bottom: 30px;
+}
+
+.container-forum-perawatan {
+  background-color: #fff8f1;
+  border-radius: 5px;
+  padding: 30px 40px;
+  position: sticky;
+  margin-bottom: 30px;
 }
 
 .forum-icon {
