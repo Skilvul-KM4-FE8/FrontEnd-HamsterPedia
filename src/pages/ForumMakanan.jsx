@@ -1,16 +1,22 @@
 // import { width } from "@mui/system";
 import "../styles/forum.css";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { useState } from "react";
 import PostForumMakanan from "../components/PostForumMakanan";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { Form } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 
 // Aos
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const ForumMakanan = () => {
+const Forum = () => {
+    const [refreshPostForum, setRefreshPostForum] = useState(false); // gpt
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -20,6 +26,8 @@ const ForumMakanan = () => {
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');  // State for category
     const [file, setFile] = useState(null);
+    const [loading, isLoading] = useState(false)
+    const [newData, setNewData] = useState([])
 
     const handleFileChange = (e) => {
         setFile(e.target.files[0]);
@@ -27,6 +35,7 @@ const ForumMakanan = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        isLoading(true)
         const formData = new FormData();
         formData.append('author', author);
         formData.append('description', description);
@@ -45,6 +54,8 @@ const ForumMakanan = () => {
                 method: 'POST',
                 body: formData,
             });
+            axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=makanan").then(result => setNewData(result.data))
+            isLoading(false)
 
             if (!response.ok) {
                 throw new Error('Upload gagal')
@@ -52,10 +63,17 @@ const ForumMakanan = () => {
 
             const data = await response.json();
             console.log(data);
+            isLoading(false)
+           
 
         } catch (e) {
             console.log("error", e);
         }
+        // const navigate = useNavigate();
+        // setRefreshPostForum(true);
+        // navigate("/forum")
+        setAuthor('')
+        setComment('')
     }
 
     return (
@@ -66,17 +84,17 @@ const ForumMakanan = () => {
                     <Row>
                         <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
                             <div className="new-post">
-                                Tambahkan Postingan Baru
+                                Tambahkan Postingan Umum
                             </div>
                             <div className="app">
                                 <form className="post-form" onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label>Nama :</label>
-                                        <input type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} />
+                                        <Form.Control type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} />
                                     </div>
                                     <div className="form-group">
                                         <label>Kategori :</label>
-                                        <select name="category" value={category} onChange={e => setCategory(e.target.value)}>
+                                        <select name="category" className="category" value={category} onChange={e => setCategory(e.target.value)}>
                                             <option value="">Pilih Kategori</option>
                                             <option value="makanan">Forum Makanan</option>
                                         </select>
@@ -87,38 +105,52 @@ const ForumMakanan = () => {
                                     </div>
                                     <div className="form-group">
                                         <label>Tambah Gambar :</label>
-                                        <input type="file" name="image" onChange={handleFileChange} />
+                                        <Form.Control type="file" name="image" onChange={handleFileChange} />
                                     </div>
-                                    <button type="submit" onClick={handleSubmit}>Posting</button>
+                                    <button type="submit" onClick={handleSubmit}>
+                                        {(loading) ? "Loading" : "Posting"}
+                                    </button>
                                 </form>
                             </div>
                         </div>
                         <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
-                            <Link to={"/forum"} onClick={() => window.scrollTo(0, 0)}>
-                                <div className="container-forum-umum">
-                                    <h4>Forum Umum</h4>
-                                    <p>Disini kamu bisa membahas topik umum seputar hamster</p>
-                                </div> 
-                            </Link>
-                            <Link to={"/forum-makanan"} onClick={() => window.scrollTo(0, 0)}>
-                                <div className="container-forum-makanan">
-                                    <h4>Forum Makanan</h4>
-                                    <p>Disini kamu bisa membahas topik umum seputar makanan hamster</p>
+                            <a class="card1" href="/forum" onClick={() => window.scrollTo(0, 0)}>
+                                <h4>Forum Umum</h4>
+                                <p class="small">Disini kamu bisa membahas topik umum seputar hamster</p>
+                                <div class="go-corner" href="#">
+                                <div class="go-arrow">
+                                    →
                                 </div>
-                            </Link>
-                            <Link to={"/forum-makanan"} onClick={() => window.scrollTo(0, 0)}>
-                                <div className="container-forum-perawatan">
-                                    <h4>Forum Perawatan</h4>
-                                    <p>Disini kamu bisa membahas topik umum seputar perawatan hamster</p>
                                 </div>
-                            </Link>
+                            </a>
+                            <a class="card2" href="/forum-makanan" onClick={() => window.scrollTo(0, 0)}>
+                                <h4>Forum Makanan</h4>
+                                <p class="small">Disini kamu bisa membahas topik seputar makanan hamster</p>
+                                <div class="go-corner2" href="#">
+                                <div class="go-arrow">
+                                    →
+                                </div>
+                                </div>
+                            </a>
+                            <a class="card3" href="/forum-perawatan" onClick={() => window.scrollTo(0, 0)}>
+                                <h4>Forum Perawatan</h4>
+                                <p class="small">Disini kamu bisa membahas topik seputar perawatan hamster</p>
+                                <div class="go-corner3" href="#">
+                                <div class="go-arrow">
+                                    →
+                                </div>
+                                </div>
+                            </a>
                         </div>
                     </Row>
                 </div>
-                <PostForumMakanan></PostForumMakanan>
+                
+                <PostForumMakanan refresh={newData} >
+
+                </PostForumMakanan>
             </section>
         </>
     );
 }
 
-export default ForumMakanan;
+export default Forum;

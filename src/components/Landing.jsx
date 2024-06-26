@@ -8,6 +8,8 @@ import Fitur1 from "../assets/landing/1.png";
 import Fitur2 from "../assets/landing/2.png";
 import Fitur3 from "../assets/landing/3.png";
 import Fitur4 from "../assets/landing/4.png";
+import Fitur5 from "../assets/landing/5.png";
+import Fitur6 from "../assets/landing/6.png";
 import { Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -56,81 +58,67 @@ const Landing = () => {
       </section>
 
       {/* FITUR WEBSITE */}
+      <h1 className="a-text d-flex mt-5" id="title-fitur">Fitur Website</h1>
+          <p id="a-text-subtitle">
+            Kenali hamster dengan berbagai fitur di website Hamster Pedia!
+          </p>
       <Row className="row-fiturweb">
-        <div
+        <a
           className="card-fitur col-lg-3"
           data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="1000" href="/jenishamster" onClick={() => window.scrollTo(0, 0)}
         >
           <div>
             <img src={Fitur1} className="img-fluid" alt="Responsive Image" />
           </div>
-        </div>
-        <div
+        </a>
+        <a
           className="card-fitur col-lg-3"
           data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="1000" href="/perawatanhamster" onClick={() => window.scrollTo(0, 0)}
         >
           <figure>
             <img src={Fitur2} className="img-fluid" alt="Responsive Image" />
           </figure>
-        </div>
-        <div
+        </a>
+        <a
           className="card-fitur col-lg-3"
           data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="1000" href="/makananhamster" onClick={() => window.scrollTo(0, 0)}
         >
           <div>
             <img src={Fitur3} className="img-fluid" alt="Responsive Image" />
           </div>
-        </div>
-        <div
-          className="card-fitur col-lg-3"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          <figure>
-            <img src={Fitur4} className="img-fluid" alt="Responsive Image" />
-          </figure>
-        </div>
+        </a>
       </Row>
-      <Row className="row-fiturweb">
-        <div
-          className="card-fitur col-lg-3"
+      <Row className="row-fiturweb-bawah">
+        <a
+          className="card-fitur col-lg-4"
           data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          <div>
-            <img src={Fitur1} className="img-fluid" alt="Responsive Image" />
-          </div>
-        </div>
-        <div
-          className="card-fitur col-lg-3"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          <figure>
-            <img src={Fitur2} className="img-fluid" alt="Responsive Image" />
-          </figure>
-        </div>
-        <div
-          className="card-fitur col-lg-3"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          <div>
-            <img src={Fitur3} className="img-fluid" alt="Responsive Image" />
-          </div>
-        </div>
-        <div
-          className="card-fitur col-lg-3"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="1000" href="/dnd" onClick={() => window.scrollTo(0, 0)}
         >
           <figure>
             <img src={Fitur4} className="img-fluid" alt="Responsive Image" />
           </figure>
-        </div>
+        </a>
+        <a
+          className="card-fitur col-lg-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000" href="/faktailmiah" onClick={() => window.scrollTo(0, 0)}
+        >
+          <div>
+            <img src={Fitur5} className="img-fluid" alt="Responsive Image" />
+          </div>
+        </a>
+        <a
+          className="card-fitur col-lg-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000" href="/forum" onClick={() => window.scrollTo(0, 0)}
+        >
+          <figure>
+            <img src={Fitur6} className="img-fluid" alt="Responsive Image" />
+          </figure>
+        </a>
       </Row>
 
       <section className="service">

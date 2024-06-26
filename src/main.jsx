@@ -16,6 +16,7 @@ import DnD from "./pages/DnD.jsx";
 import FaktaIlmiah from "./pages/FaktaIlmiah.jsx";
 import Forum from "./pages/Forum.jsx";
 import ForumMakanan from "./pages/ForumMakanan.jsx";
+import ForumPerawatan from "./pages/ForumPerawatan.jsx";
 
 
 const router = createBrowserRouter(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
         <Route path="/faktailmiah" element={<FaktaIlmiah />}/>
         <Route path="/forum" element={<Forum />}/>
         <Route path="/forum-makanan" element={<ForumMakanan />}/>
+        <Route path="/forum-perawatan" element={<ForumPerawatan />}/>
         {/* <Route path="/forum" element={<Forum />}/> */}
       </Route>
     </>

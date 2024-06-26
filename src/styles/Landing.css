@@ -199,6 +199,7 @@ footer li {
   width: auto;
   height: 400px;
   background: #ffb115;
+  margin-bottom: 100px;
 }
 
 .hero-container div {
@@ -249,12 +250,24 @@ footer li {
 }
 
 /* CARD FITUR */
+#title-fitur {
+  margin-top: 150px;
+}
+
 .row-fiturweb {
-margin: 50px;
+margin-left: 150px;
+margin-top: 20px;
 padding: 20px;
 }
 
+.row-fiturweb-bawah {
+  margin-left: 350px;
+  margin-right: 50px;
+  padding: 20px;
+  }
+
 .card-fitur img {
+  max-width: 250px;
 -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -263,6 +276,9 @@ padding: 20px;
 .card-fitur:hover img {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+}
+
+.card-fitur {
 }
 
 

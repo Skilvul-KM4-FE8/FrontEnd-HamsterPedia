@@ -6,6 +6,8 @@ import PostForum from "../components/PostForum";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Form } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 
 // Aos
 import React, { useEffect } from "react";
@@ -82,17 +84,17 @@ const Forum = () => {
                     <Row>
                         <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
                             <div className="new-post">
-                                Tambahkan Postingan Baru
+                                Tambahkan Postingan Umum
                             </div>
                             <div className="app">
                                 <form className="post-form" onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label>Nama :</label>
-                                        <input type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} />
+                                        <Form.Control type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} />
                                     </div>
                                     <div className="form-group">
                                         <label>Kategori :</label>
-                                        <select name="category" value={category} onChange={e => setCategory(e.target.value)}>
+                                        <select name="category" className="category" value={category} onChange={e => setCategory(e.target.value)}>
                                             <option value="">Pilih Kategori</option>
                                             <option value="General">Forum Umum</option>
                                             <option value="makanan">Forum Makanan</option>
@@ -105,7 +107,7 @@ const Forum = () => {
                                     </div>
                                     <div className="form-group">
                                         <label>Tambah Gambar :</label>
-                                        <input type="file" name="image" onChange={handleFileChange} />
+                                        <Form.Control type="file" name="image" onChange={handleFileChange} />
                                     </div>
                                     <button type="submit" onClick={handleSubmit}>
                                         {(loading) ? "Loading" : "Posting"}
@@ -114,24 +116,33 @@ const Forum = () => {
                             </div>
                         </div>
                         <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
-                            <Link to={"/forum"} onClick={() => window.scrollTo(0, 0)}>
-                                <div className="container-forum-umum">
-                                    <h4>Forum Umum</h4>
-                                    <p>Disini kamu bisa membahas topik umum seputar hamster</p>
-                                </div> 
-                            </Link>
-                            <Link to={"/forum-makanan"} onClick={() => window.scrollTo(0, 0)}>
-                                <div className="container-forum-makanan">
-                                    <h4>Forum Makanan</h4>
-                                    <p>Disini kamu bisa membahas topik umum seputar makanan hamster</p>
+                            <a class="card1" href="/forum" onClick={() => window.scrollTo(0, 0)}>
+                                <h4>Forum Umum</h4>
+                                <p class="small">Disini kamu bisa membahas topik umum seputar hamster</p>
+                                <div class="go-corner" href="#">
+                                <div class="go-arrow">
+                                    →
                                 </div>
-                            </Link>
-                            <Link to={"/forum-perawatan"} onClick={() => window.scrollTo(0, 0)}>
-                                <div className="container-forum-perawatan">
-                                    <h4>Forum Perawatan</h4>
-                                    <p>Disini kamu bisa membahas topik umum seputar perawatan hamster</p>
                                 </div>
-                            </Link>
+                            </a>
+                            <a class="card2" href="/forum-makanan" onClick={() => window.scrollTo(0, 0)}>
+                                <h4>Forum Makanan</h4>
+                                <p class="small">Disini kamu bisa membahas topik seputar makanan hamster</p>
+                                <div class="go-corner2" href="#">
+                                <div class="go-arrow">
+                                    →
+                                </div>
+                                </div>
+                            </a>
+                            <a class="card3" href="/forum-perawatan" onClick={() => window.scrollTo(0, 0)}>
+                                <h4>Forum Perawatan</h4>
+                                <p class="small">Disini kamu bisa membahas topik seputar perawatan hamster</p>
+                                <div class="go-corner3" href="#">
+                                <div class="go-arrow">
+                                    →
+                                </div>
+                                </div>
+                            </a>
                         </div>
                     </Row>
                 </div>
