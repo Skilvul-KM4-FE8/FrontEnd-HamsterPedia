@@ -253,6 +253,7 @@ footer li {
   margin-right: 10px;
   font-size: 16px;
   line-height: 30px;
+  text-align: justify;
   color: #393939;
 }
 
@@ -388,4 +389,67 @@ footer li {
 
 .card-robo img {
   width: 350px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1350px) {
+  .Character,
+  .Character2 {
+    display: none;
+  }
+  .hero-text {
+    margin: 0;
+  }
+  .a-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  .Character,
+  .Character2 {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 40px !important;
+    margin-left: 20px !important;
+  }
+  /* font */
+  p {
+    font-size: 14px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
+  /* classes */
+  .card-desc-jenkel {
+    margin : 40px !important;
+  }
+.hemi-detail {
+    font-size: 14px !important;
+    margin-left: 0 !important;
+  }
+  .header-jenkel {
+margin-top: 20px;
+margin-bottom: 70px;
+  }
+  /* container */
+  .a-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .card-introduction {
+    margin-bottom: 100px;
+  }
 }

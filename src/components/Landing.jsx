@@ -3,7 +3,7 @@ import eat from "../assets/hamster/eat.png";
 import banner from "../assets/hamster/banner.png";
 import jantan from "../assets/hamster/jantan.png";
 import betina from "../assets/hamster/betina.png";
-import Hamsterball from "../assets/Hamsterball.gif";
+import Hamsterball from "../assets/Hamsterball2.gif";
 import Fitur1 from "../assets/landing/1.png";
 import Fitur2 from "../assets/landing/2.png";
 import Fitur3 from "../assets/landing/3.png";
@@ -64,7 +64,7 @@ const Landing = () => {
           </p>
       <Row className="row-fiturweb">
         <a
-          className="card-fitur col-lg-3"
+          className="card-fitur col-md-2"
           data-aos="zoom-in"
           data-aos-duration="1000" href="/jenishamster" onClick={() => window.scrollTo(0, 0)}
         >
@@ -73,7 +73,7 @@ const Landing = () => {
           </div>
         </a>
         <a
-          className="card-fitur col-lg-3"
+          className="card-fitur col-md-2"
           data-aos="zoom-in"
           data-aos-duration="1000" href="/perawatanhamster" onClick={() => window.scrollTo(0, 0)}
         >
@@ -82,7 +82,7 @@ const Landing = () => {
           </figure>
         </a>
         <a
-          className="card-fitur col-lg-3"
+          className="card-fitur col-md-2"
           data-aos="zoom-in"
           data-aos-duration="1000" href="/makananhamster" onClick={() => window.scrollTo(0, 0)}
         >
@@ -90,10 +90,8 @@ const Landing = () => {
             <img src={Fitur3} className="img-fluid" alt="Responsive Image" />
           </div>
         </a>
-      </Row>
-      <Row className="row-fiturweb-bawah">
         <a
-          className="card-fitur col-lg-4"
+          className="card-fitur col-md-2"
           data-aos="zoom-in"
           data-aos-duration="1000" href="/dnd" onClick={() => window.scrollTo(0, 0)}
         >
@@ -102,7 +100,7 @@ const Landing = () => {
           </figure>
         </a>
         <a
-          className="card-fitur col-lg-4"
+          className="card-fitur col-md-2"
           data-aos="zoom-in"
           data-aos-duration="1000" href="/faktailmiah" onClick={() => window.scrollTo(0, 0)}
         >
@@ -111,7 +109,7 @@ const Landing = () => {
           </div>
         </a>
         <a
-          className="card-fitur col-lg-4"
+          className="card-fitur col-md-2"
           data-aos="zoom-in"
           data-aos-duration="1000" href="/forum" onClick={() => window.scrollTo(0, 0)}
         >
@@ -127,7 +125,7 @@ const Landing = () => {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <div className="a-container ">
+          <div className="a-container">
             <div className="card-introduction d-flex align-center justify-center">
               <img src={eat} className="Character2" alt="" />
               <div className="desc">
@@ -206,7 +204,6 @@ const Landing = () => {
         </div>
       </section>
 
-      <div>{/* article */}</div>
     </>
   );
 };
