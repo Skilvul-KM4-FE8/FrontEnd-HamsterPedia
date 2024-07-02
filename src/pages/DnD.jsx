@@ -52,7 +52,7 @@ const Perawatan = () => {
                                 <Row className="row-action">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Action1} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Action1} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -63,7 +63,7 @@ const Perawatan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Action2} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Action2} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -76,7 +76,7 @@ const Perawatan = () => {
                                 <Row className="row-action">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Action3} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Action3} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -87,7 +87,7 @@ const Perawatan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Action4} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Action4} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -107,7 +107,7 @@ const Perawatan = () => {
                         <div className="card-hemi">
                                 <Row>
                                     <div>
-                                        <img src={BannerTreat} className="banner-warning"></img>
+                                        <img src={BannerTreat} className="banner-warning2"></img>
                                     </div>
                                 </Row>
                         </div>
@@ -121,7 +121,7 @@ const Perawatan = () => {
                                 <Row className="row-action">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Treat1} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Treat1} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -132,7 +132,7 @@ const Perawatan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Treat2} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Treat2} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -145,7 +145,7 @@ const Perawatan = () => {
                                 <Row className="row-action">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Treat3} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Treat3} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -156,7 +156,7 @@ const Perawatan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Treat4} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Treat4} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -169,7 +169,7 @@ const Perawatan = () => {
                                 <Row className="row-action">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Treat5} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Treat5} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -180,7 +180,7 @@ const Perawatan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Treat6} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Treat6} className="img-hemi-dnd img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">

@@ -181,6 +181,16 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+  
+  .hemi-detail-opsi {
+    margin-top: -27px;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #393939;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   .img-hemi {
     margin-left: 0px;
@@ -344,3 +354,85 @@
     
     .card-warning img {
     }
+
+    /* Mobiles */
+@media (max-width: 767px) {
+  .Character,
+  .Character2 {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 40px !important;
+    margin-left: 20px !important;
+  }
+  /* font */
+  p {
+    font-size: 14px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
+  .header-perawatan {
+    padding-bottom: 20px;
+  }
+  /* classes */
+  .card-hemi h2{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .card-hemi p {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+.hemi-detail {
+  padding-left: 80px !important;
+  margin-bottom: 50px;
+}
+.hemi-detail-opsi {
+  padding-left: 80px !important;
+  margin-bottom: -90px;
+  font-size: 14px;
+  margin-left: -80px;
+}
+  .gambar-hemi-header {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .gambar-hemi-kandang {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    max-width: 200px !important;
+    margin-left: 150px;
+  }
+  .img-hemi {
+    max-width: 200px !important;
+  }
+  .img-hemi-opsi {
+    display: none;
+  }
+  .alas-title {
+    margin-top: -50px;
+    text-align: left !important;
+    margin-left: 40px;
+  }
+  .alas-detail {
+    margin-left: -30px;
+  }
+  /* container */
+  .a-container {
+    padding: 0;
+    margin-bottom: 50px !important;
+  }
+  .card-introduction {
+    margin-bottom: 100px;
+  }
+}

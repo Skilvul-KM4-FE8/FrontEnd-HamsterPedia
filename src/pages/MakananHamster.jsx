@@ -26,7 +26,7 @@ const Makanan = () => {
     return (
         <>
             <section>
-            <   div className="header-perawatan">
+            <   div className="header-makanan">
                     <h1 className="a-text d-flex mt-5">Makanan Hamster</h1>
                         <p id="a-text-subtitle">
                         Kira-kira makanan apa yang harus dikonsumsi hamster ya? <br />
@@ -40,13 +40,13 @@ const Makanan = () => {
                         <div className="card-hemi">
                                 <Row>
                                     <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
-                                        <div className="gambar-hemi">
-                                            <img src={Meal} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        <div className="img-header-makanan">
+                                            <img src={Meal} className="img-header-makanan img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
 
                                     <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
-                                        <div className="header-detail">
+                                        <div className="header-makanan">
                                             <h3>Wajib Berikan Biji-Bijian,<br/>
                                             Bukan Hanya Kuaci atau Kacang!</h3>
                                                 <div className="hemi-detail">
@@ -68,7 +68,7 @@ const Makanan = () => {
                                 <Row className="row-makanan">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Meal1} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Meal1} className="img-hemi-makan img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -79,7 +79,7 @@ const Makanan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Meal2} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Meal2} className="img-hemi-makan img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -92,7 +92,7 @@ const Makanan = () => {
                                 <Row className="row-makanan">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Meal3} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Meal3} className="img-hemi-makan img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -103,7 +103,7 @@ const Makanan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Meal4} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Meal4} className="img-hemi-makan img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -116,7 +116,7 @@ const Makanan = () => {
                                 <Row className="row-makanan">
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Meal5} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Meal5} className="img-hemi-makan img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -127,7 +127,7 @@ const Makanan = () => {
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Meal6} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Meal6} className="img-hemi-makan img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1000">

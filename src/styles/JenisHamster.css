@@ -16,7 +16,7 @@ h4 {
 }
 
 h2 {
-  font-size: 37px;
+  font-size: 30px !important;
 }
 
 .Character {
@@ -175,10 +175,11 @@ footer li {
 }
 
 .card-hemi p {
-    margin-right: 10px;
+    padding-right: 40px;
     font-size: 16px;
     line-height: 30px;
     color: #393939;
+    text-align: justify;
 }
 
 .img-hemi {
@@ -194,8 +195,8 @@ footer li {
 }
 
 .hemi-detail {
-  margin-top: -27px;
   margin-right: 10px;
+  margin-left: -40px;
   font-size: 16px;
   line-height: 30px;
   color: #393939;
@@ -282,7 +283,6 @@ footer li {
     padding: 40px 70px;
     border-radius: 20px;
     margin-top: -15px;
-    margin-bottom: 30px;
   }
   
   .card-jantan img {
@@ -433,21 +433,38 @@ footer li {
     font-size: 14px !important;
   }
   /* classes */
+  .header-jenis {
+    margin-bottom: 10px;
+  }
   .card-desc-jenkel {
     margin : 40px !important;
   }
 .hemi-detail {
     font-size: 14px !important;
-    margin-left: 0 !important;
+    margin-left: -40px !important;
+    margin-bottom: 20px;
+    padding: 0;
   }
   .header-jenkel {
 margin-top: 20px;
 margin-bottom: 70px;
   }
+  .card-hemi h2{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .card-hemi p {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+  .gambar-hemi {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
   /* container */
   .a-container {
     padding: 0;
-    margin: 0 auto;
+    margin-bottom: 50px !important;
   }
   .card-introduction {
     margin-bottom: 100px;

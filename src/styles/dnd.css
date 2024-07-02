@@ -49,6 +49,9 @@
 .banner-warning {
   max-width: 100%;
 }
+.banner-warning2 {
+  max-width: 100%;
+}
 
 /* CARD ACTION */
 .row-action {
@@ -75,4 +78,54 @@
 
 .action-detail p {
   font-size: 16px;
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  .Character,
+  .Character2 {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 40px !important;
+    margin-left: 20px !important;
+  }
+  /* font */
+  p {
+    font-size: 14px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
+  /* classes */
+  .banner-warning {
+    margin-top: 20px;
+  }
+
+  .row-action {
+    margin-top: -30px;
+  }
+  .img-hemi-dnd {
+    max-width: 250px !important;
+    margin-left: 120px !important;
+  }
+  .action-detail {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 20px;
+  }
+  /* container */
+  .a-container {
+    padding: 0;
+    margin-bottom: 50px !important;
+  }
 }

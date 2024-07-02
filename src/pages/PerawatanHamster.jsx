@@ -42,8 +42,8 @@ const Perawatan = () => {
                         <div className="card-hemi">
                                 <Row>
                                     <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
-                                        <div className="gambar-hemi">
-                                            <img src={Cage1} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        <div className="gambar-hemi-header">
+                                            <img src={Cage1} className="img-hemi-header img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
 
@@ -71,7 +71,7 @@ const Perawatan = () => {
                                 <Row>
                                 <div className="col-md-8" data-aos="zoom-in" data-aos-duration="1000">
                                 <h2>Opsi Kandang untuk Hamster</h2>
-                                    <div className="hemi-detail">
+                                    <div className="hemi-detail-opsi">
                                     <ul>
                                         <li><b>Kandang Plastik </b></li>
                                         Berbentuk container atau kotak plastik
@@ -98,8 +98,8 @@ const Perawatan = () => {
                         <div className="card-hemi">
                                 <Row>
                                     <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
-                                        <div className="gambar-hemi">
-                                            <img src={Container} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        <div className="gambar-hemi-kandang">
+                                            <img src={Container} className="gambar-hemi-kandang img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
 
@@ -127,8 +127,8 @@ const Perawatan = () => {
                         <div className="card-hemi">
                                 <Row>
                                     <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
-                                        <div className="gambar-hemi">
-                                            <img src={Aquarium} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        <div className="gambar-hemi-kandang">
+                                            <img src={Aquarium} className="gambar-hemi-kandang img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
 
@@ -156,8 +156,8 @@ const Perawatan = () => {
                         <div className="card-hemi">
                                 <Row>
                                     <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
-                                        <div className="gambar-hemi">
-                                            <img src={Kayu} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                        <div className="gambar-hemi-kandang">
+                                            <img src={Kayu} className="gambar-hemi-kandang img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
 
@@ -186,7 +186,7 @@ const Perawatan = () => {
                                 <Row>
                                     <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
                                         <div>
-                                            <h3>Alas Kandang yang Aman<br/>
+                                            <h3 className="alas-title">Alas Kandang yang Aman<br/>
                                             Untuk Hamster tapi Hemat Budget?</h3>
                                                 <div className="alas-detail">
                                                     <p><b>Alas serbuk kayu</b> adalah yang paling aman digunakan, karena selain harganya murah serbuk kayu juga mudah dicari di pasaran.
@@ -196,7 +196,7 @@ const Perawatan = () => {
                                     </div>
                                     <div className="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="gambar-hemi">
-                                            <img src={Serbukayu} className="img-hemi img-fluid" alt="Responsive Image"/>
+                                            <img src={Serbukayu} className="img-hemi-alas img-fluid" alt="Responsive Image"/>
                                         </div>
                                     </div>
                                 </Row>
