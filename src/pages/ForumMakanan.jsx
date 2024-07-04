@@ -83,14 +83,14 @@ const Forum = () => {
                 <div className="a-container">
                     <Row>
                         <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
-                            <div className="new-post">
-                                Tambahkan Postingan Umum
+                            <div className="new-post2">
+                                Tambahkan Postingan Makanan
                             </div>
                             <div className="app">
                                 <form className="post-form" onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label>Nama :</label>
-                                        <Form.Control type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} />
+                                        <Form.Control type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)}  placeholder="Masukkan Nama Kamu"/>
                                     </div>
                                     <div className="form-group">
                                         <label>Kategori :</label>
@@ -100,8 +100,8 @@ const Forum = () => {
                                         </select>
                                     </div>
                                     <div className="form-group">
-                                        <label>Ceritakan Sesuatu :</label>
-                                        <textarea name="description" value={description} onChange={e => setDescription(e.target.value)} />
+                                        <label>Deskripsi Postingan :</label>
+                                        <textarea name="description" value={description} onChange={e => setDescription(e.target.value)}  placeholder="Ceritakan Sesuatu"/>
                                     </div>
                                     <div className="form-group">
                                         <label>Tambah Gambar :</label>

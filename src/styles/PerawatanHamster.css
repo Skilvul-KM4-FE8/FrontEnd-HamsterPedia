@@ -180,6 +180,7 @@
     color: #393939;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: 0px;
   }
   
   .hemi-detail-opsi {
@@ -296,7 +297,7 @@
       }
 
     /* CONTAINER HEADER ALAS KANDANG */
-    .card-alas h3 {
+    .card-alas-atas h3 {
       font-size: 28px;
       color: #1D1D1D;
       margin-bottom: 20px;
@@ -305,27 +306,27 @@
       text-align: right;
     }
     
-    .card-alas {
+    .card-alas-atas {
       width: 100%;
       background-color: #FAFAFA;
       margin-top: 10px;
       margin-bottom: 30px;
     }
     
-    .card-alas img {
+    .card-alas-atas img {
         max-width: 100%;
         height: auto;
         margin: 0px;
         float: left;
     }
 
-    .alas-detail {
+    .alas-detail p{
       font-size: 16px;
       line-height: 30px;
       color: #393939;
-      padding-left: 70px;
-      padding-right: 30px;
+      padding-left: 0px;
       text-align: right;
+      padding-right: 0;
     }
 
     .cards-alas {

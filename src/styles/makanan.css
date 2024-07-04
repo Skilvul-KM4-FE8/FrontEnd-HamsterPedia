@@ -94,6 +94,7 @@
 
   .makanan-detail p {
     font-size: 16px;
+    text-align: left;
   }
 
   /* .makanan-detail h3 {

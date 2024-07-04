@@ -51,7 +51,7 @@ const Makanan = () => {
                                             Bukan Hanya Kuaci atau Kacang!</h3>
                                                 <div className="hemi-detail">
                                                     <p>Kamu bisa memberikan makanan hamster berupa biji-bijian yang dicampur dengan sayuran kering, dan bisa juga ditambahkan protein seperti mealworm kering.
-                                                        <br/> Hindari junk food dan selalu berikan makanan sehat seperti biji-bijian, sayuran segar, dan buah-buahan kepada hamster kamu.
+                                                        Hindari junk food dan selalu berikan makanan sehat seperti biji-bijian, sayuran segar, dan buah-buahan kepada hamster kamu.
                                                     </p>
                                                 </div>
                                         </div>

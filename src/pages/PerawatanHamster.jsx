@@ -181,7 +181,7 @@ const Perawatan = () => {
 
                 {/* header alas kandang */}
                 <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
-                    <div className="card-alas d-flex align-center justify-center">
+                    <div className="card-alas-atas d-flex align-center justify-center">
                         <div className="card-hemi">
                                 <Row>
                                     <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
