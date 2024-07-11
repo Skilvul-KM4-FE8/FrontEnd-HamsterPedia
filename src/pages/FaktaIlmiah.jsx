@@ -16,6 +16,7 @@ const FaktaIlmiah = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        document.title = "Fakta Ilmiah Hamster";
       }, []);
     return (
         <>

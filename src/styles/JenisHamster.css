@@ -194,9 +194,19 @@ footer li {
     justify-content: center;
 }
 
-.hemi-detail {
+.hemi-detail-jenis {
   margin-right: 10px;
-  margin-left: -40px;
+  margin-left: 0px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #393939;
+  margin-top: -25px;
+}
+
+.hemi-detail-jenkel {
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-top: -20px;
   font-size: 16px;
   line-height: 30px;
   color: #393939;
@@ -241,13 +251,15 @@ footer li {
   padding-right: 5px;
 }
 
-#card-text {
-
-}
-
 .card-desc-jenkel {
   margin-left: 70px;
   margin-bottom: 30px;
+  
+}
+
+.card-desc-jenkel h3 {
+  font-size: 30px;
+  color: #1f1f1f;
 }
 
 .card-desc-jenkel p {
@@ -439,11 +451,17 @@ footer li {
   .card-desc-jenkel {
     margin : 40px !important;
   }
-.hemi-detail {
+.hemi-detail-jenis {
     font-size: 14px !important;
-    margin-left: -40px !important;
     margin-bottom: 20px;
     padding: 0;
+    margin-left: 0;
+  }
+  .hemi-detail-jenkel {
+    font-size: 14px !important;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-left: 0;
   }
   .header-jenkel {
 margin-top: 20px;
@@ -457,9 +475,9 @@ margin-bottom: 70px;
     margin-right: 0 !important;
     padding-right: 0 !important;
   }
-  .gambar-hemi {
-    padding-top: 20px;
+  .gambar-hemi-jenis {
     padding-bottom: 30px;
+    margin-left: 70px;
   }
   /* container */
   .a-container {

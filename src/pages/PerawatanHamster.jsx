@@ -20,10 +20,12 @@ import "aos/dist/aos.css";
 import Cardalas from "../components/CardAlas";
 import Cardkebutuhan from "../components/CardKebutuhan";
 
+
 const Perawatan = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        document.title = "Perawatan Hamster";
       }, []);
     return (
         <>
@@ -50,7 +52,7 @@ const Perawatan = () => {
                                     <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
                                         <div className="header-detail">
                                             <h3>Berikan Kandang yang Luas,<br/>
-                                            Bisa Pakai Container Aja Kok!</h3>
+                                            Bisa Pakai Wadah Plastik Aja Kok!</h3>
                                                 <div className="hemi-detail">
                                                     <p>Menurut Royal Society for the Prevention of Cruelty to Animals, minimal ukuran kandang hamster yaitu<b> 75 x 40 x 40 cm </b>dengan tinggi sekitar <b>19cm.</b>
                                                         <br/> Khusus Hamster jenis Syrian, ukuran dan tinggi kandang harus lebih besar ya!
@@ -187,7 +189,7 @@ const Perawatan = () => {
                                     <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
                                         <div>
                                             <h3 className="alas-title">Alas Kandang yang Aman<br/>
-                                            Untuk Hamster tapi Hemat Budget?</h3>
+                                            Untuk Hamster tapi Hemat Biaya?</h3>
                                                 <div className="alas-detail">
                                                     <p><b>Alas serbuk kayu</b> adalah yang paling aman digunakan, karena selain harganya murah serbuk kayu juga mudah dicari di pasaran.
                                                     Serbuk kayu yang digunakan harus bersih dan minim residu kayu agar hamster tidak mengalami infeksi pernafasan. </p>

@@ -1,5 +1,4 @@
 /* CONTAINER UPLOAD CONTENT */
-
 .post-form {
   background-color: #fff;
   padding: 20px;
@@ -26,7 +25,7 @@
   margin-bottom: 20px;
 }
   .new-post1 {
-    background-color:#00838d;
+    background-color:#ffb115;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -48,7 +47,7 @@
   }
 
   .new-post3 {
-    background-color:#008d55;
+    background-color:#E45A5A;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -112,7 +111,7 @@ h4 {
 }
 
 p {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #666666;
@@ -132,7 +131,7 @@ p {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #00838d;
+  background-color: #ffb115;
   border-radius: 0 4px 0 32px;
 }
 
@@ -147,7 +146,7 @@ p {
   display: block;
   position: relative;
   max-width: 350px;
-  background-color: #f2f8f9;
+  background-color: #fffaf0;
   border-radius: 4px;
   padding: 32px 24px;
   margin-right: 12px;
@@ -164,7 +163,7 @@ p {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #00838d;
+    background: #ffb115;
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -306,7 +305,7 @@ p {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #008d55;
+  background-color: #E45A5A;
   border-radius: 0 4px 0 32px;
 }
 
@@ -321,7 +320,7 @@ p {
   display: block;
   position: relative;
   max-width: 350px;
-  background-color: #f2f9f6;
+  background-color: #fff8f8;
   border-radius: 4px;
   padding: 32px 24px;
   margin-right: 12px;
@@ -338,7 +337,7 @@ p {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #008d55;
+    background: #E45A5A;
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -384,6 +383,10 @@ p {
   padding-bottom: 5px;
 }
 
+.post-desc {
+  font-size: 16px;
+}
+
 #post-img {
   max-width: 30%;
   height: auto;
@@ -393,11 +396,13 @@ p {
 
 .post-comment {
   margin-top: 10px;
+  font-size: 16px;
 }
 
 /* FORUM COMMENT */
 .show-comment {
   margin-top: 20px;
+  font-size: 14px !important;
 }
 
 .comment-name {

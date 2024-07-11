@@ -20,6 +20,7 @@ const Forum = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        document.title = "Forum Diskusi Makanan";
     }, []);
 
     const [author, setAuthor] = useState('');
@@ -90,7 +91,7 @@ const Forum = () => {
                                 <form className="post-form" onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label>Nama :</label>
-                                        <Form.Control type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)}  placeholder="Masukkan Nama Kamu"/>
+                                        <Form.Control type="text" name="name" value={author} onChange={e => setAuthor(e.target.value)} placeholder="Masukkan Nama Kamu"/>
                                     </div>
                                     <div className="form-group">
                                         <label>Kategori :</label>
@@ -101,11 +102,11 @@ const Forum = () => {
                                     </div>
                                     <div className="form-group">
                                         <label>Deskripsi Postingan :</label>
-                                        <textarea name="description" value={description} onChange={e => setDescription(e.target.value)}  placeholder="Ceritakan Sesuatu"/>
+                                        <textarea name="description" value={description} onChange={e => setDescription(e.target.value)} placeholder="Ceritakan sesuatu"/>
                                     </div>
                                     <div className="form-group">
                                         <label>Tambah Gambar :</label>
-                                        <Form.Control type="file" name="image" onChange={handleFileChange} />
+                                        <Form.Control type="file" name="image" onChange={handleFileChange} className="input-gambar"/>
                                     </div>
                                     <button type="submit" onClick={handleSubmit}>
                                         {(loading) ? "Loading" : "Posting"}

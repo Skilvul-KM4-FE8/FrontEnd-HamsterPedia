@@ -35,7 +35,7 @@ const footer = () => {
             <div className="col-lg-2 my-3 mb-md-2 ">
               <div className="list-footer flex-column d-flex justify-content-around">
                 <div className="d-flex flex-column  gap-2">
-                  <h5 className="text-carevul">Site Map</h5>
+                  <h5 className="text-carevul">Menu Laman</h5>
                   <Link to="/jenishamster" className="fw-normal text-gray" onClick={() => window.scrollTo(0, 0)}>
                     Jenis Hamster
                   </Link>

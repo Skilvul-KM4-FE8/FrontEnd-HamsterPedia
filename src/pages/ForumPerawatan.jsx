@@ -17,6 +17,7 @@ const Forum = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        document.title = "Forum Diskusi Perawatan";
     }, []);
 
     const [author, setAuthor] = useState('');

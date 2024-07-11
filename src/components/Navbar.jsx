@@ -22,20 +22,20 @@ function MainNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">
-            <NavLink to={"/"} className="nav-link">
+            <NavLink to={"/"} target="_blank" className="nav-link">
               Beranda
             </NavLink>
-            <NavLink to={"/jenishamster"} className="nav-link ">
+            <NavLink to={"/jenishamster"} target="_blank" className="nav-link ">
               Jenis Hamster
             </NavLink>
-            <DropdownNav></DropdownNav>
-            <NavLink to={"/dnd"} className="nav-link ">
-              Do's and Don'ts
+            <DropdownNav id="dropdown-nav"></DropdownNav>
+            <NavLink to={"/dnd"} target="_blank" className="nav-link ">
+              Pantangan
             </NavLink>
-            <NavLink to={"/faktailmiah"} className="nav-link ">
+            <NavLink to={"/faktailmiah"} target="_blank" className="nav-link ">
               Fakta Ilmiah
             </NavLink>
-            <NavLink to={"/forum"} className="nav-link ">
+            <NavLink to={"/forum"} target="_blank" className="nav-link ">
               Forum
             </NavLink>
           </Nav>

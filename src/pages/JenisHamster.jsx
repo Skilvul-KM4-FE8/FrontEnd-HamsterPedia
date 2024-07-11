@@ -23,6 +23,7 @@ const Jenis = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    document.title = "Jenis Hamster";
   }, []);
   return (
     <>
@@ -48,7 +49,7 @@ const Jenis = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
               >
-                <h4>Cara Melihat Kelamin Hamster</h4>
+                <h3>Cara Melihat Kelamin Hamster</h3>
                 <p>
                   Jenis kelamin hamster biasanya lebih mudah dilihat ketika
                   sudah berumur 3-4 bulan. Untuk mengetahui jenis kelamin
@@ -74,7 +75,7 @@ const Jenis = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
               >
-                <div className="gambar-hemi">
+                <div className="gambar-hemi-jenis">
                   <img src={Kelamin} className="header-jenkel img-fluid" />
                 </div>
               </div>
@@ -97,7 +98,7 @@ const Jenis = () => {
                   data-aos-duration="1000"
                 >
                   <h2>Hamster Betina</h2>
-                  <div className="hemi-detail">
+                  <div className="hemi-detail-jenkel">
                     <ul>
                       <li>
                         Terdapat dua lubang di bagian alat kelaminnya, yaitu
@@ -118,7 +119,7 @@ const Jenis = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                 >
-                  <div className="gambar-hemi">
+                  <div className="gambar-hemi-jenis">
                     <img src={Betina2} className="img-hemi-jenkel img-fluid" />
                   </div>
                 </div>
@@ -142,7 +143,7 @@ const Jenis = () => {
                   data-aos-duration="1000"
                 >
                   <h2>Hamster Jantan</h2>
-                  <div className="hemi-detail">
+                  <div className="hemi-detail-jenkel">
                     <ul>
                       <li>
                         Badan bagian bawah hamster jantan lebih bulat dibanding
@@ -168,7 +169,7 @@ const Jenis = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                 >
-                  <div className="gambar-hemi">
+                  <div className="gambar-hemi-jenis">
                     <img src={Jantan2} className="img-hemi-jenkel img-fluid" />
                   </div>
                 </div>
@@ -188,55 +189,6 @@ const Jenis = () => {
             Masih bingung bedain jenis-jenis hamster? <br />
             Yuk kenalan sama jenis-jenis hamster yang biasa dipelihara!
           </p>
-        </div>
-        <div className="a-container ">
-          <div className="card-syrian d-flex align-center justify-center">
-            <div className="card-hemi">
-              <Row>
-                <div
-                  className="col-md-8"
-                  data-aos="zoom-in"
-                  data-aos-duration="1000"
-                >
-                  <h2>Hamster Syrian</h2>
-                  <p>
-                    Sering disebut sebagai Golden Hamster atau Hamster Teddy
-                    Bear, ukurannya lebih besar dari jenis-jenis hamster lain.
-                    Geraknya lambat dan nokturnal.
-                  </p>
-                  <div className="hemi-detail">
-                    <br /> <b>Ciri Khas : </b>Badannya besar, warnanya campuran
-                    antara 1 atau 2 warna.
-                    <br /> <b>Jenis Bulu :</b> Longhair, Satin, Rex
-                    <br /> <b>Warna : </b> Krem / golden, coklat tua, hitam, dan
-                    putih
-                    <br /> <b>Ukuran : </b>12.5 - 20 cm
-                    <br /> <b>Umur :</b> 2 - 3 Tahun
-                  </div>
-                </div>
-                <div
-                  className="col-md-4"
-                  data-aos="zoom-in"
-                  data-aos-duration="1000"
-                >
-                  <div className="gambar-hemi">
-                    <img src={Syrian} className="img-hemi img-fluid" />
-                  </div>
-                  <div
-                    className="col-md-12"
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    id="warning-safe"
-                  >
-                    <h5>
-                      <img src={Check} className="icon-check" /> tidak mudah
-                      menggigit
-                    </h5>
-                  </div>
-                </div>
-              </Row>
-            </div>
-          </div>
         </div>
 
         <div
@@ -258,7 +210,7 @@ const Jenis = () => {
                     jenis lain. Namun geraknya agresif, dan mudah menggigit dan
                     bersembunyi apabila merasa terancam.
                   </p>
-                  <div className="hemi-detail">
+                  <div className="hemi-detail-jenis">
                     <br /> <b>Ciri Khas : </b> Badannya mungil, ada corak lurus
                     ditengah punggungnya.
                     <br /> <b>Warna : </b> Putih kombinasi coklat, krem
@@ -272,7 +224,7 @@ const Jenis = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                 >
-                  <div className="gambar-hemi">
+                  <div className="gambar-hemi-jenis">
                     <img src={Campbell} className="img-hemi img-fluid" />
                   </div>
                   <div
@@ -283,6 +235,56 @@ const Jenis = () => {
                   >
                     <h5>
                       <img src={Warning} className="icon-check" /> mudah
+                      menggigit
+                    </h5>
+                  </div>
+                </div>
+              </Row>
+            </div>
+          </div>
+        </div>
+
+        <div className="a-container ">
+          <div className="card-syrian d-flex align-center justify-center">
+            <div className="card-hemi">
+              <Row>
+                <div
+                  className="col-md-8"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <h2>Hamster Syrian</h2>
+                  <p>
+                    Sering disebut sebagai Golden Hamster atau Hamster Teddy
+                    Bear, ukurannya lebih besar dari jenis-jenis hamster lain.
+                    Geraknya lambat dan nokturnal.
+                  </p>
+                  <div className="hemi-detail-jenis">
+                    <br /> <b>Ciri Khas : </b>Badannya besar, warnanya campuran
+                    antara 1 atau 2 warna.
+                    <br /> <b>Jenis Bulu :</b> Longhair, Satin, Rex
+                    <br /> <b>Warna : </b> Krem / golden, coklat tua, hitam, dan
+                    putih
+                    <br /> <b>Ukuran : </b>12.5 - 20 cm
+                    <br /> <b>Umur :</b> 2 - 3 Tahun
+                  </div>
+                </div>
+                <div
+                  className="col-md-4"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <div className="gambar-hemi-jenis">
+                    <img src={Syrian} className="img-hemi img-fluid" />
+                  </div>
+                  <div
+                    className="col-md-12"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    id="warning-safe"
+                  >
+                    <h5>
+                      <img src={Check} className="icon-check" /> tidak mudah
                       menggigit
                     </h5>
                   </div>
@@ -311,7 +313,7 @@ const Jenis = () => {
                     bulunya tidak terlalu mengembang dan coraknya tidak setebal
                     campbell.
                   </p>
-                  <div className="hemi-detail">
+                  <div className="hemi-detail-jenis">
                     <br /> <b>Ciri Khas : </b> Badannya mungil, bulunya dapat
                     berubah warna di setiap musim.
                     <br /> <b>Warna : </b> Putih, abu-abu, krem
@@ -324,7 +326,7 @@ const Jenis = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                 >
-                  <div className="gambar-hemi">
+                  <div className="gambar-hemi-jenis">
                     <img src={Winter} className="img-hemi img-fluid" />
                   </div>
                   <div
@@ -364,7 +366,7 @@ const Jenis = () => {
                     Geraknya sangat cepat, sulit diajak berteman, mudah loncat
                     dan kabur. Namun tidak mudah menggigit.
                   </p>
-                  <div className="hemi-detail">
+                  <div className="hemi-detail-jenis">
                     <br /> <b>Ciri Khas : </b> Badannya sangat mungil, matanya
                     besar, telinganya lebih besar dibandingkan dengan winter dan
                     campbell.
@@ -378,7 +380,7 @@ const Jenis = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                 >
-                  <div className="gambar-hemi">
+                  <div className="gambar-hemi-jenis">
                     <img src={Robo} className="img-hemi img-fluid" />
                   </div>
                   <div

@@ -24,10 +24,11 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Perawatan = () => {
+const Pantangan = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        document.title = "Pantangan Hamster";
       }, []);
     return (
         <>
@@ -199,4 +200,4 @@ const Perawatan = () => {
     );
 }
 
-export default Perawatan;
+export default Pantangan;

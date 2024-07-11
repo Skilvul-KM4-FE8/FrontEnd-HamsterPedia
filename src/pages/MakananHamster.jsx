@@ -12,6 +12,7 @@ import Meal3 from "../assets/perawatan/makanan/3.png";
 import Meal4 from "../assets/perawatan/makanan/4.png";
 import Meal5 from "../assets/perawatan/makanan/5.png";
 import Meal6 from "../assets/perawatan/makanan/6.png";
+import Piramida from "../assets/perawatan/makanan/piramida.jpg";
 
 // Aos
 import React, { useEffect } from "react";
@@ -22,15 +23,16 @@ const Makanan = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        document.title = "Makanan Hamster";
       }, []);
     return (
         <>
             <section>
-            <   div className="header-makanan">
+            <   div className="top-makananhamster">
                     <h1 className="a-text d-flex mt-5">Makanan Hamster</h1>
                         <p id="a-text-subtitle">
                         Kira-kira makanan apa yang harus dikonsumsi hamster ya? <br />
-                        Yuk cari tahu makanan apa saja yang boleh dikonsumsi hamster kamu!
+                        Yuk simak informasi berikut untuk mengetahui kebutuhan makanan hamster kamu!
                         </p>
                 </div>
 
@@ -59,6 +61,39 @@ const Makanan = () => {
                                 </Row>
                         </div>
                     </div>
+                </div>
+
+                {/* Piramida Makanan */}
+                <div className="a-container" data-aos="zoom-in" data-aos-duration="1000">
+                    <div>
+                        <h3 className="piramida-title">Piramida Makanan Hamster</h3>
+                        <p className="piramida-detail">Pelajari piramida makanan hamster dibawah ini untuk mengetahui prioritas makanan yang harus dikonsumsi, mulai dari makanan wajib sampai cemilan pelengkap.</p>
+                    </div>
+                        <Row>
+                        <div className="col-lg-6" data-aos="zoom-in" data-aos-duration="1000">
+                            <div className="img-piramida-makanan">
+                                <img src={Piramida} className="img-header-makanan img-fluid" alt="Responsive Image"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-6" data-aos="zoom-in" data-aos-duration="1000">
+                        <Row id="card-piramid">
+                                <h4>1. Biji-Bijian Kering</h4>
+                                <p>Biji-bijian merupakan makanan utama hamster, berikan campuran biji-bijian 1x sehari sebanyak 1 sendok makan. Pada keesokan hari, ganti biji-bijian yang tersisa dan ganti dengan yang baru.</p>
+                            </Row>
+                            <Row id="card-piramid">
+                                <h4>2. Sayur dan Buah Segar</h4>
+                                <p>Sayur dan buah bukanlah makanan hamster, melainkan makanan selingan yang hanya boleh diberikan 2x saja dalam seminggu.</p>
+                            </Row>
+                            <Row id="card-piramid">
+                                <h4>3. Protein</h4>
+                                <p>Berikan protein sebagai makanan pelengkap. Diantaranya daging ayam rebus, daging sapi giling, pasta, dan serangga kering.</p>
+                            </Row>
+                            <Row id="card-piramid">
+                                <h4>4. Cemilan</h4>
+                                <p>Kamu bisa berikan cemilan tambahan seperti cemilan kering seperti biji bunga matahari, gandum, kacang tanah. </p>
+                            </Row>
+                        </div>
+                     </Row>
                 </div>
 
                 {/* card makanan */}

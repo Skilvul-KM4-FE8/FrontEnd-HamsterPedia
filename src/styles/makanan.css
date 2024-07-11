@@ -1,11 +1,12 @@
+
+  
   /* CONTAINER */
   .a-container {
     margin-top: 0px;
     margin-bottom: -30px;
   }
   
-  .header-perawatan {
-    margin-bottom: -40px;
+  .top-makananhamster {
     margin-top: 70px;
   }
   
@@ -48,6 +49,45 @@
   .img-hemi {
     margin-left: 0px;
 }
+/* PIRAMIDA MAKANAN */
+.piramida-title {
+  text-align: center;
+  font-size: 25px;
+  color: #6a3c1a;
+}
+
+.piramida-detail {
+  font-size: 16px !important;
+  margin-right: 10px;
+      line-height: 150%;
+      color: #393939;
+      text-align: center;
+      margin-bottom: 40px;
+      margin-left: 200px;
+      margin-right: 200px;
+}
+
+.img-piramida-makanan {
+  height: auto;
+}
+
+#card-piramid {
+  background-color: #FAFAFA;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+#card-piramid p {
+  font-size: 14px !important;
+  margin-right: 10px;
+      line-height: 150%;
+      color: #393939;
+}
   
   /* CONTAINER HEADER MAKANAN */
   .card-header h3 {
@@ -62,7 +102,6 @@
       width: 100%;
       background-color: #FAFAFA;
       border-radius: 20px;
-      margin-top: 10px;
       margin-bottom: 30px;
     }
     
@@ -76,6 +115,7 @@
   /* CARD MAKANAN */
   .row-makanan {
     margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   .card-makanan {
@@ -135,12 +175,28 @@
   max-width: 250px !important;
   margin-left: 120px !important;
 }
+
+#card-piramid {
+  margin-right: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #ffffff;
+}
+
+.piramida-detail {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px !important;
+}
 .makanan-detail{
   text-align: center;
   margin: 40px;
 }
 .row-makanan {
   margin-bottom: 0px;
+  margin-top: 0;
 }
   /* container */
   .a-container {

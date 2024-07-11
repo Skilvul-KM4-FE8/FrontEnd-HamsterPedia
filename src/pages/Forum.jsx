@@ -20,6 +20,7 @@ const Forum = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        document.title = "Forum Diskusi Umum";
     }, []);
 
     const [author, setAuthor] = useState('');

@@ -9,8 +9,8 @@ function DropdownNav() {
         </Dropdown.Toggle>
 
         <DropdownMenu>
-            <Dropdown.Item href="/perawatanhamster" id="dropdown-item">Perawatan Hamster</Dropdown.Item>
-            <Dropdown.Item href="/makananhamster" id="dropdown-item">Makanan Hamster</Dropdown.Item>
+            <Dropdown.Item href="/perawatanhamster" id="dropdown-item" target="_blank">Perawatan Hamster</Dropdown.Item>
+            <Dropdown.Item href="/makananhamster" id="dropdown-item" target="_blank">Makanan Hamster</Dropdown.Item>
         </DropdownMenu>
     </Dropdown>
   );
