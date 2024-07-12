@@ -159,6 +159,11 @@ footer li {
   margin-top: 70px;
 }
 
+.header-jenis2 {
+  margin-bottom: -30px;
+  margin-top: 80px;
+}
+
 .a-text {
   color: #6a3c1a;
   font-weight: bold;
@@ -210,6 +215,40 @@ footer li {
   font-size: 16px;
   line-height: 30px;
   color: #393939;
+}
+
+.img-hemi-real1 {
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.img-hemi-real2 {
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.desc-jantan-real {
+  line-height: 30px;
+  text-align: right;
+  margin-left: 20px;
+}
+
+.desc-betina-real {
+  line-height: 30px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+#row-jantan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row-betina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #warning-safe {
@@ -416,6 +455,86 @@ footer li {
     padding: 0;
     margin: 0 auto;
   }
+  p {
+    font-size: 14px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
+  /* classes */
+  .header-jenis {
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  .header-jenis2 {
+    margin-bottom: 10px;
+    margin-top: -30px;
+  }
+  .card-desc-jenkel {
+    margin : 40px !important;
+  }
+.hemi-detail-jenis {
+    font-size: 14px !important;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-left: 0;
+  }
+  .hemi-detail-jenkel {
+    font-size: 14px !important;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-left: 0;
+  }
+  .header-jenkel {
+margin-top: 20px;
+margin-bottom: 70px;
+  }
+  .img-hemi-real1 {
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .img-hemi-real2 {
+    border-radius: 0;
+    margin-bottom: 30px;
+  }
+  .desc-betina-real {
+    display: none;
+  }
+
+  .desc-jantan-real {
+    display: none;
+  }
+
+  .card-hemi h2{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .card-hemi p {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+  .gambar-hemi-jenis {
+    padding-bottom: 30px;
+    margin-left: 70px;
+  }
+  /* container */
+  .a-container {
+    padding: 0;
+    margin-bottom: 50px !important;
+  }
+  .card-introduction {
+    margin-bottom: 100px;
+  }
 }
 
 /* Mobiles */
@@ -467,6 +586,22 @@ footer li {
 margin-top: 20px;
 margin-bottom: 70px;
   }
+  .img-hemi-real1 {
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .img-hemi-real2 {
+    border-radius: 0;
+    margin-bottom: 30px;
+  }
+  .desc-betina-real {
+    display: none;
+  }
+
+  .desc-jantan-real {
+    display: none;
+  }
+
   .card-hemi h2{
     text-align: center;
     margin-top: 20px;

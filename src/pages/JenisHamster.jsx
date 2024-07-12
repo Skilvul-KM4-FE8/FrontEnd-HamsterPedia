@@ -10,6 +10,8 @@ import Winter from "../assets/hamster/winter.png";
 import Robo from "../assets/hamster/robo.png";
 import Jantan2 from "../assets/hamster/jantan2.png";
 import Betina2 from "../assets/hamster/betina2.png";
+import JantanReal from "../assets/hamster/jantanreal2.svg";
+import BetinaReal from "../assets/hamster/betinareal2.svg";
 import Check from "../assets/icon/check.png";
 import Warning from "../assets/icon/warning.png";
 import Kelamin from "../assets/perawatan/kelamin.jpg";
@@ -177,10 +179,41 @@ const Jenis = () => {
             </div>
           </div>
         </div>
+        {/* Jenis Kelamin Real */}
+        <div
+          className="a-container"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <Row>
+             
+              <div className="col-md-2" id="row-jantan">
+                  <p className="desc-jantan-real">▶ <br/>Hamster jantan. Tampak testikel di bagian belakang</p>
+              </div>
+              <div
+                  className="col-md-4"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <img src={JantanReal} className="img-hemi-real1 img-fluid" />
+              </div>
+              <div
+                  className="col-md-4"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <img src={BetinaReal} className="img-hemi-real2 img-fluid" />
+              </div>
+              <div className="col-md-2" id="row-betina">
+                  <p className="desc-betina-real"> ◀ <br/>Hamster betina. Tampak adanya puting susu</p>
+              </div>
+          </Row>
+        </div>
+        <br/>
 
         {/* jenis hamster */}
         <div
-          className="header-jenis"
+          className="header-jenis2"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
