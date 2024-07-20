@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
-import { Col, Container, Row, Button } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import "../styles/card-alas.css";
 
 function CardAlasKandang() {
@@ -9,7 +9,7 @@ function CardAlasKandang() {
 
   useEffect(() => {
     axios(
-      "https://665b3003003609eda4601925.mockapi.io/article?page=1&limit=3"
+      "https://665b3003003609eda4601925.mockapi.io/alaskandang?page=1&limit=3"
     ).then((result) => setCard(result.data));
   }, []);
 

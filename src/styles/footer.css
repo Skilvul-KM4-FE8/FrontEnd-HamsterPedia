@@ -39,7 +39,7 @@ p {
 }
 
 /* For Footer */
-.text-carevul {
+.text-hamsped {
   color: #6a3c1a;
 }
 
@@ -55,12 +55,6 @@ p {
   line-height: 25px;
   font-size: 16px;
   font-weight: 400;
-}
-
-.social-media {
-  font-size: 30px;
-  color: #6a3c1a;
-  width: 60%;
 }
 
 .list-footer {

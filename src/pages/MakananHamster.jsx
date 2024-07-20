@@ -1,7 +1,5 @@
 // import { width } from "@mui/system";
 import "../styles/makanan.css";
-import { Outlet } from "react-router";
-import { Link, NavLink } from "react-router-dom";
 import { Row } from "react-bootstrap";
 
 // import illust

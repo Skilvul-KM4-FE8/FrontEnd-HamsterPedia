@@ -4,13 +4,14 @@ import banner from "../assets/hamster/banner.png";
 import jantan from "../assets/hamster/jantan.png";
 import betina from "../assets/hamster/betina.png";
 import Hamsterball from "../assets/Hamsterball2.gif";
+import Hamsterball3 from "../assets/Hamsterball3.gif";
 import Fitur1 from "../assets/landing/1.png";
 import Fitur2 from "../assets/landing/2.png";
 import Fitur3 from "../assets/landing/3.png";
 import Fitur4 from "../assets/landing/4.png";
 import Fitur5 from "../assets/landing/5.png";
 import Fitur6 from "../assets/landing/6.png";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 // Aos
@@ -58,15 +59,19 @@ const Landing = () => {
       </section>
 
       {/* FITUR WEBSITE */}
-      <h1 className="a-text d-flex mt-5" id="title-fitur">Fitur Website</h1>
-          <p id="a-text-subtitle">
-            Kenali hamster dengan berbagai fitur di website Hamster Pedia!
-          </p>
+      <h1 className="a-text d-flex mt-5" id="title-fitur">
+        Fitur Website
+      </h1>
+      <p id="a-text-subtitle">
+        Kenali hamster dengan berbagai fitur di website Hamster Pedia!
+      </p>
       <Row className="row-fiturweb">
         <a
           className="card-fitur col-md-2"
           data-aos="zoom-in"
-          data-aos-duration="1000" href="/jenishamster" onClick={() => window.scrollTo(0, 0)}
+          data-aos-duration="1000"
+          href="/jenishamster"
+          onClick={() => window.scrollTo(0, 0)}
         >
           <div>
             <img src={Fitur1} className="img-fluid" alt="Responsive Image" />
@@ -75,7 +80,9 @@ const Landing = () => {
         <a
           className="card-fitur col-md-2"
           data-aos="zoom-in"
-          data-aos-duration="1000" href="/perawatanhamster" onClick={() => window.scrollTo(0, 0)}
+          data-aos-duration="1000"
+          href="/perawatanhamster"
+          onClick={() => window.scrollTo(0, 0)}
         >
           <figure>
             <img src={Fitur2} className="img-fluid" alt="Responsive Image" />
@@ -84,7 +91,9 @@ const Landing = () => {
         <a
           className="card-fitur col-md-2"
           data-aos="zoom-in"
-          data-aos-duration="1000" href="/makananhamster" onClick={() => window.scrollTo(0, 0)}
+          data-aos-duration="1000"
+          href="/makananhamster"
+          onClick={() => window.scrollTo(0, 0)}
         >
           <div>
             <img src={Fitur3} className="img-fluid" alt="Responsive Image" />
@@ -93,7 +102,9 @@ const Landing = () => {
         <a
           className="card-fitur col-md-2"
           data-aos="zoom-in"
-          data-aos-duration="1000" href="/dnd" onClick={() => window.scrollTo(0, 0)}
+          data-aos-duration="1000"
+          href="/dnd"
+          onClick={() => window.scrollTo(0, 0)}
         >
           <figure>
             <img src={Fitur4} className="img-fluid" alt="Responsive Image" />
@@ -102,7 +113,9 @@ const Landing = () => {
         <a
           className="card-fitur col-md-2"
           data-aos="zoom-in"
-          data-aos-duration="1000" href="/faktailmiah" onClick={() => window.scrollTo(0, 0)}
+          data-aos-duration="1000"
+          href="/faktailmiah"
+          onClick={() => window.scrollTo(0, 0)}
         >
           <div>
             <img src={Fitur5} className="img-fluid" alt="Responsive Image" />
@@ -111,7 +124,9 @@ const Landing = () => {
         <a
           className="card-fitur col-md-2"
           data-aos="zoom-in"
-          data-aos-duration="1000" href="/forum" onClick={() => window.scrollTo(0, 0)}
+          data-aos-duration="1000"
+          href="/forum"
+          onClick={() => window.scrollTo(0, 0)}
         >
           <figure>
             <img src={Fitur6} className="img-fluid" alt="Responsive Image" />
@@ -202,8 +217,10 @@ const Landing = () => {
         <div>
           <img src={Hamsterball} className="hamsterball img-fluid"></img>
         </div>
+        <div>
+          <img src={Hamsterball3} className="hamsterball3 img-fluid"></img>
+        </div>
       </section>
-
     </>
   );
 };

@@ -16,9 +16,10 @@ function PostForum({ refresh }) {
   const navigate = useNavigate();
 
   const fetchData = async () => {
-    axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=perawatan")
-      .then(result => setCard(result.data));
-  }
+    axios(
+      "https://backend-hamsterpedia.vercel.app/post/allposts?category=perawatan"
+    ).then((result) => setCard(result.data));
+  };
 
   useEffect(() => {
     setCard(refresh);
@@ -40,49 +41,71 @@ function PostForum({ refresh }) {
     isLoading(true);
 
     try {
-      const response = await fetch(`https://backend-hamsterpedia.vercel.app/comment/addcomment/${postId}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(commentData),
-      });
+      const response = await fetch(
+        `https://backend-hamsterpedia.vercel.app/comment/addcomment/${postId}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(commentData),
+        }
+      );
 
       if (!response.ok) {
-        throw new Error('Upload gagal');
+        throw new Error("Upload gagal");
       }
 
       const data = await response.json();
       console.log(data);
 
-      await axios("https://backend-hamsterpedia.vercel.app/post/allposts?category=perawatan")
-        .then(result => setCard(result.data));
-
+      await axios(
+        "https://backend-hamsterpedia.vercel.app/post/allposts?category=perawatan"
+      ).then((result) => setCard(result.data));
     } catch (e) {
       console.log("error", e);
     }
     navigate("/forum");
     isLoading(false);
-  }
+  };
 
   return (
     <>
-      {cards.map(item => (
-        <div className="a-container" key={item.id} data-aos="zoom-in" data-aos-duration="1000">
+      {cards.map((item) => (
+        <div
+          className="a-container"
+          key={item.id}
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <Row>
-            <div className="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
+            <div
+              className="col-lg-8"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <div className="list-post">
                 <Card.Title className="post-title">{item.author}</Card.Title>
                 <Card.Text className="post-desc">{item.description}</Card.Text>
-                <Card.Img src={item.image} id="post-img" className="img-fluid"/>
-                <hr/>
+                <Card.Img
+                  src={item.image}
+                  id="post-img"
+                  className="img-fluid"
+                />
+                <hr />
                 <div className="show-comment">
-                  {item.comments.map(c => (
-                    <p key={c.id}><b>{c.author}</b> {c.comment}</p>
+                  {item.comments.map((c) => (
+                    <p key={c.id}>
+                      <b>{c.author}</b> {c.comment}
+                    </p>
                   ))}
                 </div>
                 {/* POST COMMENT */}
-                <CommentForm postId={item.id} loading={loading} handleSubmit={handleSubmit} />
+                <CommentForm
+                  postId={item.id}
+                  loading={loading}
+                  handleSubmit={handleSubmit}
+                />
               </div>
             </div>
           </Row>
@@ -94,24 +117,24 @@ function PostForum({ refresh }) {
 
 function CommentForm({ postId, loading, handleSubmit }) {
   const [inputValues, setInputValues] = useState({
-    author: '',
-    comment: ''
+    author: "",
+    comment: "",
   });
 
-  const [activeField, setActiveField] = useState('');
+  const [activeField, setActiveField] = useState("");
 
   const handleInputChange = (field) => (event) => {
-    setInputValues(prevValues => ({
+    setInputValues((prevValues) => ({
       ...prevValues,
-      [field]: event.target.value
+      [field]: event.target.value,
     }));
     setActiveField(field);
   };
 
   const onSubmit = (e) => {
     handleSubmit(e, postId, inputValues);
-    setInputValues({ author: '', comment: '' });
-    setActiveField('');
+    setInputValues({ author: "", comment: "" });
+    setActiveField("");
   };
 
   return (
@@ -120,20 +143,20 @@ function CommentForm({ postId, loading, handleSubmit }) {
         placeholder="Nama"
         className="comment-name"
         value={inputValues.author}
-        onChange={handleInputChange('author')}
-        onFocus={() => setActiveField('author')}
-        onBlur={() => setActiveField('')}
+        onChange={handleInputChange("author")}
+        onFocus={() => setActiveField("author")}
+        onBlur={() => setActiveField("")}
       />
       <input
         placeholder="Tambahkan Komentar"
         className="comment-desc"
         value={inputValues.comment}
-        onChange={handleInputChange('comment')}
-        onFocus={() => setActiveField('comment')}
-        onBlur={() => setActiveField('')}
+        onChange={handleInputChange("comment")}
+        onFocus={() => setActiveField("comment")}
+        onBlur={() => setActiveField("")}
       />
       <Button className="new-comment" type="submit">
-        {loading ? ("Loading") : <img src={Send} alt="Send" />}
+        {loading ? "Loading" : <img src={Send} alt="Send" />}
       </Button>
     </form>
   );

@@ -1,9 +1,9 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink, Navigate, useNavigate } from "react-router-dom";
-import Logo from "../assets/LogoHamsped.svg"
+import { NavLink, useNavigate } from "react-router-dom";
+import Logo from "../assets/LogoHamsped.svg";
 import "./../styles/Navbar.css";
-import { Container, Button, Dropdown } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import DropdownNav from "./DropdownNav";
 
 function MainNavbar() {
@@ -39,9 +39,7 @@ function MainNavbar() {
               Forum
             </NavLink>
           </Nav>
-          <Nav className="ms-auto gap-1">
-           {component}
-          </Nav>
+          <Nav className="ms-auto gap-1">{component}</Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
