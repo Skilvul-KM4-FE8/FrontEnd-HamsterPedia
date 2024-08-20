@@ -496,6 +496,7 @@ footer li {
     margin-left: 0;
   }
   .header-jenkel {
+    margin-left: -10px;
 margin-top: 20px;
 margin-bottom: 70px;
   }
@@ -523,9 +524,13 @@ margin-bottom: 70px;
     margin-right: 0 !important;
     padding-right: 0 !important;
   }
-  .gambar-hemi-jenis {
+  .gambar-hemi-jenkel {
     padding-bottom: 30px;
     margin-left: 70px;
+  }
+  .gambar-hemi-jenis {
+    padding-bottom: 30px;
+    margin-left: 40px;
   }
   /* container */
   .a-container {
@@ -583,6 +588,7 @@ margin-bottom: 70px;
     margin-left: 0;
   }
   .header-jenkel {
+    margin-left: -10px;
 margin-top: 20px;
 margin-bottom: 70px;
   }
@@ -610,9 +616,13 @@ margin-bottom: 70px;
     margin-right: 0 !important;
     padding-right: 0 !important;
   }
+  .gambar-hemi-jenkel {
+    padding-bottom: 30px;
+    margin-left: 0px;
+  }
   .gambar-hemi-jenis {
     padding-bottom: 30px;
-    margin-left: 70px;
+    margin-left: 40px;
   }
   /* container */
   .a-container {

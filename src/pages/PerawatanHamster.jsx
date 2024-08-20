@@ -63,7 +63,7 @@ const Perawatan = () => {
                   data-aos-duration="1000"
                 >
                   <div className="header-detail">
-                    <h3>
+                    <h3 className="header-detailh3">
                       Berikan Kandang yang Luas,
                       <br />
                       Bisa Pakai Wadah Plastik Aja Kok!
@@ -352,7 +352,7 @@ const Perawatan = () => {
                   <div className="gambar-hemi">
                     <img
                       src={Kebutuhan}
-                      className="img-hemi img-fluid"
+                      className="gambar-hemi-kebutuhan img-fluid"
                       alt="Responsive Image"
                     />
                   </div>

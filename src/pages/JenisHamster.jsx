@@ -111,7 +111,7 @@ const Jenis = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                 >
-                  <div className="gambar-hemi-jenis">
+                  <div className="gambar-hemi-jenkel">
                     <img src={Betina2} className="img-hemi-jenkel img-fluid" />
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const Jenis = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                 >
-                  <div className="gambar-hemi-jenis">
+                  <div className="gambar-hemi-jenkel">
                     <img src={Jantan2} className="img-hemi-jenkel img-fluid" />
                   </div>
                 </div>

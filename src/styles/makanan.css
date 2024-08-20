@@ -23,6 +23,8 @@
     line-height: 150%;
     text-align: center;
     padding-bottom: 40px;
+    padding-left: 20px;
+  padding-right: 20px;
   }
   
   .card-hemi p {
@@ -190,9 +192,16 @@
   text-align: center;
   margin: 40px;
 }
+.hemi-detail {
+  margin-left: 0px;
+  padding-left: 0px;
+}
 .row-makanan {
   margin-bottom: 0px;
   margin-top: 0;
+}
+.gambar-hemi {
+  margin-left: -30px;
 }
   /* container */
   .a-container {
