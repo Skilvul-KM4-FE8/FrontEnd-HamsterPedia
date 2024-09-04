@@ -59,12 +59,14 @@ const Landing = () => {
       </section>
 
       {/* FITUR WEBSITE */}
+      <div className="rounded-frame">
       <h1 className="a-text d-flex mt-5" id="title-fitur">
         Fitur Website
       </h1>
       <p id="a-text-subtitle">
         Kenali hamster dengan berbagai fitur di website Hamster Pedia!
       </p>
+      </div>
       <Row className="row-fiturweb">
         <a
           className="card-fitur col-md-2"

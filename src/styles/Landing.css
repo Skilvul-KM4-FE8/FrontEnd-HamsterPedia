@@ -282,6 +282,7 @@ footer li {
 .a-container {
   padding: 3rem 9rem 2rem 9rem;
   margin: 0 auto;
+  border-radius: 30px;
 }
 
 .a-text {
